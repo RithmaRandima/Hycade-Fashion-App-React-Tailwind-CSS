@@ -1,0 +1,69 @@
+.about-bottom-box:hover img {
+  transform: scale(1.03);
+}
+
+.about-bottom-btn:hover .about-btn-bottom-bar {
+  width: 80px;
+}
+
+.progress-bar::after {
+  content: "";
+  width: 0%;
+  height: 6px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.about-progress-section:hover .progress-bar-1::after {
+  animation: progress-bar-1 1s linear forwards;
+}
+
+@keyframes progress-bar-1 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 67%;
+  }
+}
+
+.about-progress-section:hover .progress-bar-2::after {
+  animation: progress-bar-2 1s linear forwards;
+}
+
+@keyframes progress-bar-2 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 87%;
+  }
+}
+
+.about-progress-section:hover .progress-bar-3::after {
+  animation: progress-bar-3 1s linear forwards;
+}
+
+@keyframes progress-bar-3 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 57%;
+  }
+}
+
+.about-progress-section:hover .progress-bar-4::after {
+  animation: progress-bar-4 1s linear forwards;
+}
+
+@keyframes progress-bar-4 {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 32%;
+  }
+}

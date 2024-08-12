@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Sidebar from "./components/Sidebar/Sidebar";
 import { createContext, useState } from "react";
 import Shop from "./Pages/Shop";
+import AboutUsPage from "./Pages/AboutUsPage";
 
 export const ShopContext = createContext(null);
 
@@ -19,12 +20,13 @@ function App() {
   window.addEventListener("scroll", hideSidebar);
 
   return (
-    <div className="overflow-x-hidden h-[500vh]">
+    <div className="overflow-x-hidden">
       <ShopContext.Provider value={{ sideBar, setSideBar }}>
         <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Shop />} />
+            {/* <Route path="/" element={<Shop />} /> */}
+            <Route path="/" element={<AboutUsPage />} />
           </Routes>
         </BrowserRouter>
         <Sidebar />

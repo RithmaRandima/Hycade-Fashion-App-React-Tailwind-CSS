@@ -50,7 +50,7 @@ const ParallaxShop = () => {
             top-[410px]"
           >
             <img
-              src={img2}
+              src={img3}
               className="w-[100%] h-[100%] object-cover "
               alt=""
             />

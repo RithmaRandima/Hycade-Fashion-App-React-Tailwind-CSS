@@ -1,0 +1,7 @@
+.about-bottom-box:hover img {
+  transform: scale(1.03);
+}
+
+.about-bottom-btn:hover .about-btn-bottom-bar {
+  width: 80px;
+}
