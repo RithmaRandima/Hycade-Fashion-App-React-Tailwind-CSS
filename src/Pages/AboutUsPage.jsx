@@ -4,14 +4,16 @@ import AboutUsBottomSection from "../components/AboutUsBottomSection/AboutUsBott
 import AboutProgressSection from "../components/AboutProgressSection/AboutProgressSection";
 import AboutParallaxShop from "../components/AboutParallaxShop/AboutParallaxShop";
 import Testimonials from "../components/Testimonials/Testimonials";
+import PricingSection from "../components/PricingSection/PricingSection";
 
 const AboutUsPage = () => {
   return (
-    <div className="h-[700vh]">
+    <div className="overflow-x-hidden">
       <AboutUs />
       <AboutUsBottomSection />
       <AboutProgressSection />
       <AboutParallaxShop />
+      <PricingSection />
       <Testimonials />
     </div>
   );
