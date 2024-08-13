@@ -5,6 +5,7 @@ import Sidebar from "./components/Sidebar/Sidebar";
 import { createContext, useState } from "react";
 import Shop from "./Pages/Shop";
 import AboutUsPage from "./Pages/AboutUsPage";
+import ContactUs from "./Pages/ContactUs";
 
 export const ShopContext = createContext(null);
 
@@ -26,7 +27,8 @@ function App() {
           <Navbar />
           <Routes>
             {/* <Route path="/" element={<Shop />} /> */}
-            <Route path="/" element={<AboutUsPage />} />
+            {/* <Route path="/" element={<AboutUsPage />} /> */}
+            <Route path="/" element={<ContactUs />} />
           </Routes>
         </BrowserRouter>
         <Sidebar />
