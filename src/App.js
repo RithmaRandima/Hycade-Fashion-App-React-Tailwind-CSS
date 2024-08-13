@@ -6,6 +6,7 @@ import { createContext, useState } from "react";
 import Shop from "./Pages/Shop";
 import AboutUsPage from "./Pages/AboutUsPage";
 import ContactUs from "./Pages/ContactUs";
+import Footer from "./components/Footer/Footer";
 
 export const ShopContext = createContext(null);
 
@@ -26,10 +27,11 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Routes>
-            {/* <Route path="/" element={<Shop />} /> */}
-            <Route path="/" element={<AboutUsPage />} />
+            <Route path="/" element={<Shop />} />
+            {/* <Route path="/" element={<AboutUsPage />} /> */}
             {/* <Route path="/" element={<ContactUs />} /> */}
           </Routes>
+          <Footer />
         </BrowserRouter>
         <Sidebar />
       </ShopContext.Provider>
