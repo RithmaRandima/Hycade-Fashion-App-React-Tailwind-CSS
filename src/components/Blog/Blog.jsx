@@ -1,12 +1,8 @@
 import React from "react";
 import BlogBox from "./BlogBox/BlogBox";
-import img1 from "../../assets/8241.jpg";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { HiUser } from "react-icons/hi";
-import { FaComments } from "react-icons/fa";
 import BlogTitleBox from "./BlogTitleBox/BlogTitleBox";
 
 const Blog = () => {

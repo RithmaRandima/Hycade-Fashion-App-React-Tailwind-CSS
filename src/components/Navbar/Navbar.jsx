@@ -3,9 +3,10 @@ import "./Navbar.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { ShopContext } from "../../App";
 import { Link } from "react-router-dom";
+import { IoIosArrowDown } from "react-icons/io";
 
 const Navbar = () => {
-  const { sideBar, setSideBar } = useContext(ShopContext);
+  const { sideBar, setSideBar, setSideBarValue } = useContext(ShopContext);
   const [showBar, setShowBar] = useState("home");
   const [color, setColor] = useState(false);
 
@@ -34,6 +35,7 @@ const Navbar = () => {
         </h1>
       </div>
 
+      {/* link section */}
       <div>
         <ul className=" flex gap-8">
           <li
@@ -69,8 +71,68 @@ const Navbar = () => {
             </Link>
           </li>
 
-          <li className="text-[24px] cursor-pointer">
-            <p>pages</p>
+          <li className="product-link flex items-center gap-2 text-[20px] cursor-pointer text-center relative">
+            {showBar === "product" && (
+              <hr className="w-[10px] h-[2px] bg-white"></hr>
+            )}
+            <p>products</p>
+            <div>
+              <IoIosArrowDown className="product-link-down-arrow" />
+            </div>
+            <div className="product-link-section">
+              {/* product link */}
+              <div
+                className="product-link-item flex items-center gap-2"
+                onClick={() => {
+                  setShowBar("product");
+                  window.scrollTo(0, 0);
+                }}
+              >
+                <span className="link-item-yellow-bar h-[3px]  bg-yellow-400 w-[0px] duration-300 rounded-full"></span>
+                <Link
+                  to="/mens"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  <p className="font-[500] text-[17px] tracking-[2px]">men's</p>
+                </Link>
+              </div>
+
+              {/* product link */}
+              <div
+                className="product-link-item flex items-center gap-2"
+                onClick={() => {
+                  setShowBar("product");
+                  window.scrollTo(0, 0);
+                }}
+              >
+                <span className="link-item-yellow-bar h-[3px]  bg-yellow-400 w-[0px] duration-300 rounded-full"></span>
+                <Link
+                  to="/womens"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  <p className="font-[500] text-[17px] tracking-[2px]">
+                    women's
+                  </p>
+                </Link>
+              </div>
+
+              {/* product link */}
+              <div
+                className="product-link-item flex items-center gap-2"
+                onClick={() => {
+                  setShowBar("product");
+                  window.scrollTo(0, 0);
+                }}
+              >
+                <span className="link-item-yellow-bar h-[3px]  bg-yellow-400 w-[0px] duration-300 rounded-full"></span>
+                <Link
+                  to="/kids"
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  <p className="font-[500] text-[17px] tracking-[2px]">kid's</p>
+                </Link>
+              </div>
+            </div>
           </li>
 
           {showBar === "home" || showBar === "blog" ? (
@@ -98,7 +160,10 @@ const Navbar = () => {
 
           <li
             className="flex items-center gap-2 tracking-[2px] font-[500] cursor-pointer"
-            onClick={() => setShowBar("contact")}
+            onClick={() => {
+              setShowBar("contact");
+              window.scrollTo(0, 0);
+            }}
           >
             {showBar === "contact" && (
               <hr className="w-[10px] h-[2px] bg-white"></hr>
@@ -113,15 +178,26 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      {/* button */}
 
-      <div>
-        <button>login</button>
+      {/* button section */}
+      <div className="flex gap-5 items-center">
+        <button
+          className="border-2 border-white px-5 py-[3px] text-[14px] font-[700] tracking-[1px]"
+          style={{ borderColor: color === true ? "black" : "white" }}
+          onClick={() => {
+            setSideBarValue("login");
+            setSideBar(!sideBar);
+          }}
+        >
+          login
+        </button>
         <button
           className="text-white text-[20px]"
           onClick={() => {
+            setSideBarValue("contact info");
             setSideBar(!sideBar);
           }}
+          style={{ color: color === true ? "black" : "white" }}
         >
           {sideBar ? (
             <FaTimes style={{ color: sideBar === true ? "black" : "white" }} />

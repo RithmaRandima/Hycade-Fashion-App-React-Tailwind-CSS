@@ -5,15 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-import img1 from "../../assets/hero-bg-1.webp";
-import img2 from "../../assets/hero-bg-2.webp";
-import img3 from "../../assets/hero-bg-3.webp";
-import img4 from "../../assets/hero-bg-4.jpg";
-import img5 from "../../assets/hero-bg-5.jpg";
 import { heroContentData } from "../../data/HeroContentData";
-import Navbar from "../Navbar/Navbar";
 import { FaCartPlus } from "react-icons/fa";
-import Sidebar from "../Sidebar/Sidebar";
 
 const Hero = () => {
   var settings = {
