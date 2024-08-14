@@ -1,4 +1,9 @@
-/* .logo {
-  position: relative;
-  background: #fff;
-} */
+.white-nav hr {
+  background-color: black;
+}
+.white-nav .logo {
+  background-color: black;
+}
+.white-nav .logo h1 {
+  color: white;
+}

@@ -30,7 +30,6 @@ const Hero = () => {
   };
   return (
     <div className="w-[100%] h-[95vh] relative">
-      <Navbar />
       <Slider {...settings}>
         {heroContentData.map((data) => {
           return (

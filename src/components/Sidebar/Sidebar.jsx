@@ -9,8 +9,8 @@ const Sidebar = () => {
     <div
       className={
         sideBar
-          ? "fixed z-30 h-[95vh] w-[410px] bg-white right-0 top-0 flex flex-col items-center pt-[60px] gap-7 px-10 duration-300"
-          : "fixed z-30 h-[95vh] w-[410px] bg-white right-[-410px] top-0 flex flex-col items-center pt-[60px] gap-7 px-10 duration-300"
+          ? "fixed z-30 h-[100vh] w-[410px] bg-white right-0 top-0 flex flex-col items-center pt-[60px] gap-7 px-10 duration-300"
+          : "fixed z-30 h-[100vh] w-[410px] bg-white right-[-410px] top-0 flex flex-col items-center pt-[60px] gap-7 px-10 duration-300"
       }
     >
       {/* logo */}

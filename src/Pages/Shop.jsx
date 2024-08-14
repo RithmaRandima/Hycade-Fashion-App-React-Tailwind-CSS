@@ -10,7 +10,7 @@ import Blog from "../components/Blog/Blog";
 
 const Shop = () => {
   return (
-    <div>
+    <div className="scroll-smooth">
       <Hero />
       <HeroBottomSection />
       <ParallaxShop />

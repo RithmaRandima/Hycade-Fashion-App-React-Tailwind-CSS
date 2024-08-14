@@ -38,7 +38,7 @@ const Blog = () => {
   };
 
   return (
-    <div className="w-[100%] h-[100%] pb-8">
+    <div className="w-[100%] h-[100%] pb-8 pt-[40px] scroll-smooth" id="blog">
       {/* title text */}
       <div className="text-center w-[50%] mx-auto mb-[30px] m-[20px] flex items-center flex-col">
         <h1 className="text-[45px] font-[500] mb-4">blog</h1>

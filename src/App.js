@@ -28,8 +28,8 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Shop />} />
-            {/* <Route path="/" element={<AboutUsPage />} /> */}
-            {/* <Route path="/" element={<ContactUs />} /> */}
+            <Route path="/about" element={<AboutUsPage />} />
+            <Route path="/contact" element={<ContactUs />} />
           </Routes>
           <Footer />
         </BrowserRouter>
