@@ -6,6 +6,7 @@ import PopularSection from "../components/PopularSection/PopularSection";
 import NewArrivals from "../components/NewArrivals/NewArrivals";
 import NewItemsSection from "../components/NewItemsSection/NewItemsSection";
 import ShopNewsLetter from "../components/ShopNewsLetter/ShopNewsLetter";
+import Blog from "../components/Blog/Blog";
 
 const Shop = () => {
   return (
@@ -17,6 +18,7 @@ const Shop = () => {
       <NewItemsSection />
       <NewArrivals />
       <ShopNewsLetter />
+      <Blog />
     </div>
   );
 };
