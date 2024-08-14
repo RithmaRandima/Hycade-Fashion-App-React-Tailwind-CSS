@@ -22,6 +22,7 @@ const NewArrivals = () => {
             veniam nostrum veritatis fuga corrupti consequuntur id corporis
             velit, eos mollitia?
           </p>
+          {/* bottom bar */}
           <div className="w-[140px] bg-transparent h-[7px] flex mt-[20px]">
             <div className="w-[80px] bg-black h-[100%]"></div>
             <div className="flex-1 bg-black h-[100%] ml-[20px]"></div>

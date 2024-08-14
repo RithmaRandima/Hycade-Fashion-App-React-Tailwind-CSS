@@ -5,6 +5,7 @@ import ParallaxShop from "../components/ParallaxShop/ParallaxShop";
 import PopularSection from "../components/PopularSection/PopularSection";
 import NewArrivals from "../components/NewArrivals/NewArrivals";
 import NewItemsSection from "../components/NewItemsSection/NewItemsSection";
+import ShopNewsLetter from "../components/ShopNewsLetter/ShopNewsLetter";
 
 const Shop = () => {
   return (
@@ -15,6 +16,7 @@ const Shop = () => {
       <PopularSection />
       <NewItemsSection />
       <NewArrivals />
+      <ShopNewsLetter />
     </div>
   );
 };
