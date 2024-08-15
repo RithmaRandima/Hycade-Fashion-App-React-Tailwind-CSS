@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 
 const Navbar = () => {
-  const { sideBar, setSideBar, setSideBarValue } = useContext(ShopContext);
-  const [showBar, setShowBar] = useState("home");
+  const { sideBar, setSideBar, setSideBarValue, showBar, setShowBar } =
+    useContext(ShopContext);
   const [color, setColor] = useState(false);
 
   const changeColor = () => {
@@ -180,7 +180,7 @@ const Navbar = () => {
       </div>
 
       {/* button section */}
-      <div className="flex gap-5 items-center">
+      <div className="flex gap-6 items-center">
         <button
           className="border-2 border-white px-5 py-[3px] text-[14px] font-[700] tracking-[1px]"
           style={{ borderColor: color === true ? "black" : "white" }}

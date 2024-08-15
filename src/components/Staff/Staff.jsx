@@ -1,5 +1,8 @@
 import React from "react";
 import StaffBox from "./StaffBox/StaffBox";
+import img1 from "../../assets/staff-1.jpg";
+import img2 from "../../assets/staff-2.jpg";
+import { staffData } from "../../data/StaffData";
 
 const Staff = () => {
   return (
@@ -25,14 +28,16 @@ const Staff = () => {
 
       {/* staff box section */}
       <div className="w-[90%] h-[100%] mx-auto grid grid-cols-4 gap-[30px] mb-[20px]">
-        <StaffBox />
-        <StaffBox />
-        <StaffBox />
-        <StaffBox />
-        <StaffBox />
-        <StaffBox />
-        <StaffBox />
-        <StaffBox />
+        {staffData.map((data) => {
+          return (
+            <StaffBox
+              img={data.img}
+              name={data.name}
+              position={data.position}
+              key={data.id}
+            />
+          );
+        })}
       </div>
     </div>
   );

@@ -5,7 +5,6 @@ import img1 from "../../assets/hero-bg-1.webp";
 import img2 from "../../assets/hero-bg-2.webp";
 import img3 from "../../assets/hero-bg-3.webp";
 import img4 from "../../assets/hero-bg-4.jpg";
-import { FaStar } from "react-icons/fa";
 import { IoMdStar } from "react-icons/io";
 
 const NewItemsSection = () => {

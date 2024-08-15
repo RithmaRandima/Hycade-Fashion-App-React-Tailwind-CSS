@@ -9,14 +9,20 @@ import {
 import { PiPinterestLogo, PiPinterestLogoFill } from "react-icons/pi";
 import img1 from "../../../assets/hero-bg-1.webp";
 
-const StaffBox = () => {
+import "./StaffBox.css";
+
+const StaffBox = (props) => {
   return (
-    <div className="w-[100%] h-[100%] pb-[20px]">
+    <div className="staff-box w-[100%] h-[100%] pb-[20px]">
       {/* img container */}
       <div className="w-[100%] h-[300px] overflow-hidden relative">
-        <img src={img1} className="w-[100%] h-[100%] object-cover" alt="" />
+        <img
+          src={props.img}
+          className="w-[100%] h-[100%] object-cover duration-300"
+          alt=""
+        />
         {/* social overlay */}
-        <div className="absolute w-[100%] h-[50px] bg-black/30 bottom-0 flex items-center justify-center text-white gap-[13px] text-[17px] ">
+        <div className="link-overlay absolute w-[100%] h-[0px] overflow-hidden duration-300 bg-gradient-to-t from-black/70 to-black/20 bottom-0 flex items-center justify-center text-white gap-[13px] text-[17px] ">
           <FaFacebook className="hover:text-yellow-500 hover:scale-110 duration-200" />
           <PiPinterestLogoFill className="hover:text-yellow-500 hover:scale-110 duration-200" />
           <FaInstagram className="hover:text-yellow-500 hover:scale-110 duration-200" />
@@ -27,10 +33,10 @@ const StaffBox = () => {
       {/* info */}
       <div>
         <h1 className="mt-4 tracking-[1px] text-[18px] font-[500]">
-          RIthma Randima
+          {props.name}
         </h1>
         <p className="mt-1 text-[14px] tracking-[2px] font-[400] text-black/70">
-          position
+          {props.position}
         </p>
       </div>
     </div>

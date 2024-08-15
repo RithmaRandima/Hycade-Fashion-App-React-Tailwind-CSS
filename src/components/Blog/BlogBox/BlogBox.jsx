@@ -1,6 +1,5 @@
 import React from "react";
-import img from "../../../assets/hero-bg-2.webp";
-import { FaComments, FaUser } from "react-icons/fa";
+import { FaComments } from "react-icons/fa";
 import { HiUser } from "react-icons/hi";
 
 const BlogBox = (props) => {
@@ -20,8 +19,7 @@ const BlogBox = (props) => {
         }}
       >
         <img
-          // src={props.img}
-          src={img}
+          src={props.img}
           alt=""
           className="w-[100%] h-[100%] object-cover"
         />

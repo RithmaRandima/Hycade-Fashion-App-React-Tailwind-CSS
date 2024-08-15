@@ -5,6 +5,14 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import BlogTitleBox from "./BlogTitleBox/BlogTitleBox";
 
+import img1 from "../../assets/blog-1.jpg";
+import img2 from "../../assets/blog-2.jpg";
+import img3 from "../../assets/blog-3.jpg";
+import img4 from "../../assets/blog-4.jpg";
+import img5 from "../../assets/blog-5.jpg";
+import img6 from "../../assets/blog-6.jpg";
+import img7 from "../../assets/blog-7.jpg";
+
 const Blog = () => {
   var settings = {
     arrows: false,
@@ -56,26 +64,27 @@ const Blog = () => {
       <div className="w-[93%] h-[100%]  mx-auto gap-4 grid grid-cols-3">
         <div className="w-[100%] h-[455px]">
           <Slider {...settings}>
-            <BlogBox height={140} />
-            <BlogBox height={170} />
+            <BlogBox height={140} img={img2} />
+            <BlogBox height={170} img={img3} />
           </Slider>
           <BlogTitleBox height={120} title="modern" />
         </div>
 
         <div className="w-[100%] h-[100%]">
-          <BlogBox height={220} />
+          <BlogBox height={220} img={img1} />
           <BlogTitleBox
             height={230}
             title={"awesome wears take you to awesome places"}
             author="rithma randima"
           />
-          <BlogBox height={190} />
+          <BlogBox height={190} img={img4} />
         </div>
 
         <div className="w-[100%] h-[430px]">
           <Slider {...settings2}>
-            <BlogBox height={180} />
-            <BlogBox height={230} />
+            <BlogBox height={180} img={img5} />
+            <BlogBox height={230} img={img6} />
+            <BlogBox height={200} img={img7} />
           </Slider>
           <BlogTitleBox height={120} title={"booze"} />
         </div>

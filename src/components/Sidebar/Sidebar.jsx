@@ -1,6 +1,18 @@
 import React, { useContext } from "react";
 import img1 from "../../assets/hero-bg-2.webp";
 import { ShopContext } from "../../App";
+import {
+  FaFacebook,
+  FaFacebookF,
+  FaGooglePlus,
+  FaGooglePlusG,
+  FaInstagram,
+  FaInstagramSquare,
+  FaLinkedin,
+  FaTwitter,
+} from "react-icons/fa";
+import { LiaLinkedinIn } from "react-icons/lia";
+import { GoOrganization } from "react-icons/go";
 
 const Sidebar = () => {
   const { sideBar, sideBarValue } = useContext(ShopContext);
@@ -8,8 +20,8 @@ const Sidebar = () => {
     <div
       className={
         sideBar
-          ? "fixed z-30 h-[100vh] w-[410px] bg-white right-0 top-0 flex flex-col items-center pt-[60px] gap-7 px-10 duration-300"
-          : "fixed z-30 h-[100vh] w-[410px] bg-white right-[-410px] top-0 flex flex-col items-center pt-[60px] gap-7 px-10 duration-300"
+          ? "fixed z-30 h-[100vh] w-[410px] bg-white right-0 top-0 flex flex-col items-center pt-[70px] gap-7 px-10 duration-300"
+          : "fixed z-30 h-[100vh] w-[410px] bg-white right-[-410px] top-0 flex flex-col items-center pt-[70px] gap-7 px-10 duration-300"
       }
     >
       {/* logo */}
@@ -20,36 +32,126 @@ const Sidebar = () => {
       </div>
       {/* contact info */}
       {sideBarValue === "contact info" && (
-        <div className="w-[85%] h-[205px]  grid grid-cols-3 gap-2">
-          <div className="w-[100%] h-[90px] bg-blue-50">
-            <img src={img1} className="w-[100%] h-[100%] object-cover" alt="" />
+        <div className="w-[100%] ">
+          {/* grid section */}
+          <div className="w-[90%] h-[205px]  mx-auto  grid grid-cols-3 gap-2">
+            <div className="w-[100%] h-[90px]">
+              <img
+                src={img1}
+                className="w-[100%] h-[100%] object-cover"
+                alt=""
+              />
+            </div>
+            <div className="w-[100%] h-[90px]">
+              <img
+                src={img1}
+                className="w-[100%] h-[100%] object-cover"
+                alt=""
+              />
+            </div>
+            <div className="w-[100%] h-[90px]">
+              <img
+                src={img1}
+                className="w-[100%] h-[100%] object-cover"
+                alt=""
+              />
+            </div>
+            <div className="w-[100%] h-[90px]">
+              <img
+                src={img1}
+                className="w-[100%] h-[100%] object-cover"
+                alt=""
+              />
+            </div>
+            <div className="w-[100%] h-[90px]">
+              <img
+                src={img1}
+                className="w-[100%] h-[100%] object-cover"
+                alt=""
+              />
+            </div>
+            <div className="w-[100%] h-[90px]">
+              <img
+                src={img1}
+                className="w-[100%] h-[100%] object-cover"
+                alt=""
+              />
+            </div>
           </div>
-          <div className="w-[100%] h-[90px] bg-blue-50">
-            <img src={img1} className="w-[100%] h-[100%] object-cover" alt="" />
-          </div>
-          <div className="w-[100%] h-[90px] bg-blue-50">
-            <img src={img1} className="w-[100%] h-[100%] object-cover" alt="" />
-          </div>
-          <div className="w-[100%] h-[90px] bg-blue-50">
-            <img src={img1} className="w-[100%] h-[100%] object-cover" alt="" />
-          </div>
-          <div className="w-[100%] h-[90px] bg-blue-50">
-            <img src={img1} className="w-[100%] h-[100%] object-cover" alt="" />
-          </div>
-          <div className="w-[100%] h-[90px] bg-blue-50">
-            <img src={img1} className="w-[100%] h-[100%] object-cover" alt="" />
+
+          {/* details */}
+          <div className="text-left w-[100%] mx-auto font-sans">
+            <div className="my-3">
+              <h1 className="font-bold text-[19px]">Email</h1>
+              <p className="text-[14px]">hycade@fashion.com</p>
+            </div>
+
+            <div className="my-3">
+              <h1 className="font-bold text-[19px]">Phone</h1>
+              <p className="text-[14px] mb-2">Hycade shop + 1 473 483 384</p>
+              <p className="text-[14px]"> Hycade cafe + 1 474 499 384</p>
+            </div>
+
+            <div className="my-2">
+              <h1 className="font-bold text-[19px]">Follow Us</h1>
+              <div className="flex justify-between items-center mt-3 w-[50%]">
+                <FaFacebook className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
+                <FaTwitter className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
+                <FaLinkedin className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
+                <FaInstagram className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
+              </div>
+            </div>
           </div>
         </div>
       )}
 
       {/* login */}
       {sideBarValue === "login" && (
-        <div className="w-[85%] h-[205px]  grid grid-cols-3 gap-2">
-          <div className="w-[100%] h-[90px] bg-blue-50">
-            <img src={img1} className="w-[100%] h-[100%] object-cover" alt="" />
+        <div className="w-[100%] h-[440px] flex flex-col gap-[20px] items-center justify-center">
+          {/* input box */}
+          <div className="w-[100%]">
+            <input
+              type="email"
+              placeholder="Email"
+              className="w-[100%] outline-none border-2 border-black py-2 px-3"
+            />
           </div>
-          <div className="w-[100%] h-[90px] bg-blue-50">
-            <img src={img1} className="w-[100%] h-[100%] object-cover" alt="" />
+
+          {/* input box */}
+          <div className="w-[100%]">
+            <input
+              type="password"
+              placeholder="Password"
+              className="w-[100%] outline-none border-2 border-black py-2 px-3"
+            />
+            <div className="flex items-center justify-end mt-3 mr-4 gap-2">
+              <input type="checkbox" />
+              <label className="text-[12px] font-[700] tracking-[1px]">
+                show password
+              </label>
+            </div>
+          </div>
+
+          <button className="w-[100%] py-3 bg-black text-white font-[700] tracking-[2px] hover:scale-90  duration-300">
+            login
+          </button>
+
+          <p className="text-[14px] tracking-[1px] font-[500]">
+            forget{" "}
+            <span className="text-red-600 cursor-pointer">password?</span>
+          </p>
+
+          <p className="text-[14px] mt-[-10px] tracking-[1px] font-[500]">
+            Don't have an account?{" "}
+            <span className="text-red-600 cursor-pointer">sign up</span>
+          </p>
+
+          <div className="flex items-center gap-4 text-[17px] mt-4">
+            <FaFacebookF className="hover:scale-125 duration-200 hover:text-red-600" />
+            <FaInstagram className="hover:scale-125 duration-200 hover:text-red-600" />
+            <FaTwitter className="hover:scale-125 duration-200 hover:text-red-600" />
+            <LiaLinkedinIn className="hover:scale-125 duration-200 hover:text-red-600" />
+            <FaGooglePlusG className="hover:scale-125 duration-200 hover:text-red-600" />
           </div>
         </div>
       )}

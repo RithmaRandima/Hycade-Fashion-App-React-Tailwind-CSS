@@ -14,6 +14,7 @@ export const ShopContext = createContext(null);
 function App() {
   const [sideBar, setSideBar] = useState(false);
   const [sideBarValue, setSideBarValue] = useState("");
+  const [showBar, setShowBar] = useState("home");
 
   const hideSidebar = () => {
     if (window.scrollY >= 200) {
@@ -26,7 +27,14 @@ function App() {
   return (
     <div className="overflow-x-hidden">
       <ShopContext.Provider
-        value={{ sideBar, setSideBar, sideBarValue, setSideBarValue }}
+        value={{
+          sideBar,
+          setSideBar,
+          sideBarValue,
+          setSideBarValue,
+          showBar,
+          setShowBar,
+        }}
       >
         <BrowserRouter>
           <Navbar />

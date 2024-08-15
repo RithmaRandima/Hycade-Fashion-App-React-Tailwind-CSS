@@ -1,0 +1,7 @@
+.staff-box:hover img {
+  transform: scale(1.05);
+}
+
+.staff-box:hover .link-overlay {
+  height: 50px;
+}
