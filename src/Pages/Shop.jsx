@@ -7,6 +7,7 @@ import NewArrivals from "../components/NewArrivals/NewArrivals";
 import NewItemsSection from "../components/NewItemsSection/NewItemsSection";
 import ShopNewsLetter from "../components/ShopNewsLetter/ShopNewsLetter";
 import Blog from "../components/Blog/Blog";
+import Placeholdertext from "../components/Placeholdertext/Placeholdertext";
 
 const Shop = () => {
   return (
@@ -17,6 +18,7 @@ const Shop = () => {
       <PopularSection />
       <NewItemsSection />
       <NewArrivals />
+      <Placeholdertext />
       <ShopNewsLetter />
       <Blog />
     </div>

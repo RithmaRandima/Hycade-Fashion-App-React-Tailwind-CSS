@@ -6,7 +6,7 @@ import { staffData } from "../../data/StaffData";
 
 const Staff = () => {
   return (
-    <div className="w-[100%] h-[100%] overflow-hidden">
+    <div className="w-[100%] h-[100%] mt-[130px] overflow-hidden">
       {/* title */}
       <div className="text-center py-[40px]">
         <h1 className="text-[45px] lowercase tracking-[2px] font-[500]">

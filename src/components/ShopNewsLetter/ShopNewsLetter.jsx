@@ -7,7 +7,7 @@ import { Background, Parallax } from "react-parallax";
 
 const ShopNewsLetter = () => {
   return (
-    <div className=" w-[100%] h-[70vh] mb-[90px] bg-red-300 relative ">
+    <div className=" w-[100%] h-[70vh] mb-[90px] relative ">
       <Parallax strength={200} className="w-[100%] h-[100%] ">
         <Background className="custom-bg w-[100vw] h-[100%]">
           <img
