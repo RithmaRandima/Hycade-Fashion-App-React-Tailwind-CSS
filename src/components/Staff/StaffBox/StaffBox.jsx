@@ -1,13 +1,11 @@
 import React from "react";
 import {
   FaFacebook,
-  FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
   FaTwitter,
 } from "react-icons/fa";
-import { PiPinterestLogo, PiPinterestLogoFill } from "react-icons/pi";
-import img1 from "../../../assets/hero-bg-1.webp";
+import { PiPinterestLogoFill } from "react-icons/pi";
 
 import "./StaffBox.css";
 

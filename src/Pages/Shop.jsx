@@ -18,8 +18,8 @@ const Shop = () => {
       <PopularSection />
       <NewItemsSection />
       <NewArrivals />
-      <Placeholdertext />
       <ShopNewsLetter />
+      <Placeholdertext />
       <Blog />
     </div>
   );

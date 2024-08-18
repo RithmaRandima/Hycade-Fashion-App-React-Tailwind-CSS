@@ -20,7 +20,12 @@ code {
 
 .placeholder-text {
   font-family: "Satisfy", cursive;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.hero-bottom-text {
+  font-family: "Satisfy", cursive;
+  font-size: 45px;
 }
 
 .placeholder-text-small {

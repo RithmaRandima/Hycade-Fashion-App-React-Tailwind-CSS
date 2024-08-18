@@ -1,5 +1,5 @@
-import img1 from "../assets/hero-bg-1.webp";
-import img2 from "../assets/hero-bg-2.webp";
+import img1 from "../assets/lookbook-6.jpg";
+import img2 from "../assets/hero-bg-1.jpg";
 import img3 from "../assets/hero-bg-3.webp";
 import img4 from "../assets/hero-bg-4.jpg";
 import img5 from "../assets/hero-bg-5.jpg";

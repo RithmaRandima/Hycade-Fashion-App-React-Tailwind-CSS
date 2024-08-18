@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../../../assets/hero-bg-1.webp";
+import img1 from "../../../assets/hero-bg-1.jpg";
 import "./AboutUsBottomBox.css";
 
 const AboutUsBottomBox = (props) => {

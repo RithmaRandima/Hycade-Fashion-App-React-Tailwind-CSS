@@ -1,14 +1,15 @@
 import React from "react";
 import bgImg from "../../assets/8909.jpg";
 import Slider from "react-slick";
-import img1 from "../../assets/hero-bg-1.webp";
-import img2 from "../../assets/hero-bg-2.webp";
-import img3 from "../../assets/hero-bg-3.webp";
-import img4 from "../../assets/hero-bg-4.jpg";
+import img1 from "../../assets/new-items-1.jpg";
+import img2 from "../../assets/lookbook-5.jpg";
+import img3 from "../../assets/new-items-2.jpg";
+import img4 from "../../assets/new-items-3.jpg";
+import img5 from "../../assets/lookbook-6.jpg";
 import { IoMdStar } from "react-icons/io";
 
 const NewItemsSection = () => {
-  const imgList = [img1, img2, img3, img4];
+  const imgList = [img1, img2, img3, img4, img5];
   var settings = {
     infinite: true,
     speed: 1000,
@@ -30,7 +31,7 @@ const NewItemsSection = () => {
         <div className="w-[100%] h-[100%] bg-white grid grid-cols-2">
           {/* left section */}
           <div className="w-[100%] h-[100%] pl-[30px] flex items-center justify-center relative">
-            <div className="absolute h-[90vh] bg-red-300 w-[90%] shadow-sm shadow-black/60 overflow-hidden">
+            <div className="absolute h-[90vh]  w-[90%] shadow-sm shadow-black/60 overflow-hidden">
               <Slider {...settings}>
                 {imgList.map((img) => (
                   <img

@@ -5,10 +5,10 @@ const Placeholdertext = () => {
   return (
     <div className="text-[#eaeaea] w-[100%] h-[90vh] my-[30px] flex flex-col justify-center items-center  mx-auto text-center relative">
       <div className="z-20 absolute w-[60%] -rotate-[15deg]">
-        <h1 className="placeholder-text text-[130px] leading-[100px] font-extrabold">
+        <h1 className="placeholder-text text-[120px] leading-[100px] font-extrabold">
           The Theme You Trust In
         </h1>
-        <p className="placeholder-text-small text-[25px] mt-[30px] text-[#b6b6b6]">
+        <p className="placeholder-text-small text-[22px] mt-[30px] text-[#b6b6b6]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. In quasi
           dolorem animi minima aperiam, sint labore fuga, ut, incidunt quod
           placeat voluptatem voluptates iste iusto nam aspernatur eum quam

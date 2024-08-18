@@ -1,6 +1,5 @@
 import React from "react";
 import "./Item.css";
-import img1 from "../../assets/main-image-1.jpeg";
 import { FaEye, FaHeart } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import { IoMdStar } from "react-icons/io";
