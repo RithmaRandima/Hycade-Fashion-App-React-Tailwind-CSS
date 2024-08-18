@@ -71,7 +71,7 @@ const Navbar = () => {
             </Link>
           </li>
 
-          <li className="product-link flex items-center gap-2 text-[20px] cursor-pointer text-center relative">
+          <li className="product-link flex font-[500] items-center gap-2 text-[20px] cursor-pointer text-center relative">
             {showBar === "product" && (
               <hr className="w-[10px] h-[2px] bg-white"></hr>
             )}

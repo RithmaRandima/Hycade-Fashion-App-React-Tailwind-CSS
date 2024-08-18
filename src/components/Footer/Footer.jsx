@@ -15,17 +15,17 @@ import { PiPinterestLogoFill } from "react-icons/pi";
 const Footer = () => {
   const { showBar, setShowBar } = useContext(ShopContext);
   return (
-    <div className="w-[100%] h-[60vh] ">
+    <div className="w-[100%] h-[50vh] ">
       {/* top */}
       <Parallax strength={200} className="w-[100%] h-[100%]">
         <Background className="custom-bg w-[100vw] h-[100%] overflow-hidden">
           <img
             src={img1}
             alt="fill murray"
-            className="hero-bg-image w-[100%] h-[100%] object-cover"
+            className="w-[100%] h-[100%] object-cover"
           />
         </Background>
-        <div className="w-[100%] h-[50vh] flex flex-col items-center justify-center">
+        <div className="w-[100%] h-[40vh] flex flex-col items-center justify-center">
           <div className="flex items-center px-[60px] mt-[40px] mb-[10px] w-[100%]">
             <p className="text-[40px] text-white tracking-[2px] mr-[60px] font-[700]">
               subscribe

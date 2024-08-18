@@ -1,6 +1,6 @@
 import React from "react";
 import { Background, Parallax } from "react-parallax";
-import bgImg from "../../assets/white-painted-wall-texture-background.jpg";
+import bgImg from "../../assets/Parallax-Background.jpg";
 import img1 from "../../assets/hero-bg-3.webp";
 import img2 from "../../assets/hero-bg-1.webp";
 import img3 from "../../assets/hero-bg-5.jpg";

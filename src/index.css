@@ -26,3 +26,16 @@ code {
 .placeholder-text-small {
   font-family: "Yellowtail", cursive;
 }
+
+.product-categories {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  padding-bottom: 100px;
+  color: #000;
+  background: linear-gradient(90deg, #ffffff71, #ffffff),
+    url("./assets/products-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

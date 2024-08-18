@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../../assets/white-painted-wall-texture-background.jpg";
+import bgImage from "../../assets/Parallax-Background.jpg";
 import Item from "../Item/Item";
 import { Background, Parallax } from "react-parallax";
 
@@ -9,7 +9,7 @@ const NewArrivals = () => {
       <Parallax strength={500} className="w-[100%] h-[100%]">
         <Background className="custom-bg w-[100vw] h-[200vh] overflow-hidden">
           <img
-            src={img1}
+            src={bgImage}
             alt="fill murray"
             className="w-[100%] h-[100%] object-cover"
           />
