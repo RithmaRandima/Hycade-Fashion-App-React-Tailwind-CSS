@@ -44,6 +44,16 @@ const ParallaxShop = () => {
               className="w-[100%] h-[100%] object-contain "
               alt=""
             />
+
+            {/* price tag section*/}
+            <div className="absolute right-[-50px] top-[0px] text-center cursor-pointer">
+              <p className="text-[25px] font-[900] text-white tracking-[2px]  hover:text-yellow-400">
+                cool items
+              </p>
+              <p className="bg-black text-white border-2 border-white w-fit px-2 text-[22px] font-[900] mx-auto  hover:text-yellow-400  hover:border-yellow-400">
+                $20.00
+              </p>
+            </div>
           </motion.div>
 
           {/* Right Side Small Image 02 */}
@@ -53,7 +63,7 @@ const ParallaxShop = () => {
               duration: 3,
               delay: 0.2,
             }}
-            className="w-[280px] h-[280px] bghite absolute left-[-30px]
+            className="w-[260px] h-[260px] bghite absolute left-[-30px]
             top-[340px]"
           >
             <img
@@ -61,6 +71,16 @@ const ParallaxShop = () => {
               className="w-[100%] h-[100%] object-contain "
               alt=""
             />
+
+            {/* price tag section*/}
+            <div className="absolute left-[10px] top-[1px] text-center cursor-pointer">
+              <p className="text-[20px] font-[900] text-white tracking-[2px]  hover:text-yellow-400">
+                cool items
+              </p>
+              <p className="bg-black text-white border-2 border-white w-fit px-2 text-[18px] font-[900] mx-auto  hover:text-yellow-400  hover:border-yellow-400">
+                $20.00
+              </p>
+            </div>
           </motion.div>
 
           {/* Right Side big Image  */}
@@ -70,14 +90,23 @@ const ParallaxShop = () => {
               duration: 3,
               delay: 0.1,
             }}
-            className="w-[500px] h-[500px] bggreen-400 absolute left-[270px]
-            top-[240px]"
+            className="w-[470px] h-[470px] absolute left-[280px]
+            top-[260px]"
           >
             <img
               src={img3}
               className="w-[100%] h-[100%] object-contain "
               alt=""
             />
+            {/* price tag section*/}
+            <div className="absolute left-[70px] top-[100px] text-center cursor-pointer">
+              <p className="text-[22px] font-[900] text-white tracking-[2px]  hover:text-yellow-400">
+                cool items
+              </p>
+              <p className="bg-black text-white border-2 border-white w-fit px-2 text-[20px] font-[900] mx-auto  hover:text-yellow-400  hover:border-yellow-400">
+                $20.00
+              </p>
+            </div>
           </motion.div>
         </Parallax>
       </div>
