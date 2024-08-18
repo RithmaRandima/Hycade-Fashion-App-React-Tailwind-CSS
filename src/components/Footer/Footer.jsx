@@ -1,8 +1,7 @@
 import React, { useContext } from "react";
 import { Background, Parallax } from "react-parallax";
-import img1 from "../../assets/hero-bg-3.webp";
+import img1 from "../../assets/footer-bg.jpg";
 import { Link } from "react-router-dom";
-import { IoIosArrowDown } from "react-icons/io";
 import { ShopContext } from "../../App";
 import {
   FaFacebook,
@@ -22,10 +21,10 @@ const Footer = () => {
           <img
             src={img1}
             alt="fill murray"
-            className="w-[100%] h-[100%] object-cover"
+            className="w-[100%] h-[100%] object-cover object-center"
           />
         </Background>
-        <div className="w-[100%] h-[40vh] flex flex-col items-center justify-center">
+        <div className="w-[100%] h-[40vh] flex flex-col bg-gradient-to-r from-black to-black/10 items-center justify-center">
           <div className="flex items-center px-[60px] mt-[40px] mb-[10px] w-[100%]">
             <p className="text-[40px] text-white tracking-[2px] mr-[60px] font-[700]">
               subscribe
