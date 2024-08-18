@@ -5,9 +5,10 @@ import { FaEye, FaHeart } from "react-icons/fa";
 
 const LookBookBox = (props) => {
   return (
-    <div className="look-book-box w-[100%] h-[410px] relative overflow-hidden">
+    <div className="look-book-box w-[100%] h-[450px] relative overflow-hidden">
       <img
-        src={img1}
+        // src={img1}
+        src={props.img}
         className="w-[100%]  h-[100%] object-cover duration-300 "
         alt=""
       />
@@ -15,11 +16,11 @@ const LookBookBox = (props) => {
       <div className="look-book-box-overlay z-10 absolute left-0 top-0 bg-black/50  w-[100%] h-[100%]  text-white opacity-0">
         <div className="absolute look-book-box-overlay-text w-[100%] h-[100%] flex flex-col justify-start items-center opacity-0 top-[-10%]  duration-300">
           <h1 className="text-[22px] font-[700] lowercase tracking-[2px]">
-            {props.title}Rithma Randima
+            {props.title}
           </h1>
           <h1>{props.subtitle}street style</h1>
           <p className="text-[30px] font-[900] tracking-[2px]">
-            $ {props.price}100
+            $ {props.price}
           </p>
           <button className="bg-yellow-400 text-black px-5 py-2 text-[10px] font-[500] tracking-[1px] hover:bg-white mt-2">
             add to cart

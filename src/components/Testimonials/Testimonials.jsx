@@ -7,7 +7,7 @@ import TestimonialBox from "./TestimonialBox/TestimonialBox";
 
 const Testimonials = () => {
   var settings = {
-    arrows: true,
+    arrows: false,
     dots: true,
     infinite: true,
     autoplay: true,
@@ -18,7 +18,7 @@ const Testimonials = () => {
     initialSlide: 0,
   };
   return (
-    <div className="mt-[110px] w-[100%] h-[70vh] flex flex-col justify-center items-center">
+    <div className="mt-[10px] w-[100%] h-[70vh] flex flex-col justify-center items-center">
       {/* testimonial container */}
       <h1 className="text-[40px] font-[500] mb-[10px]">Why They Like us</h1>
       <div className="w-[80%] mx-auto h-[45vh]">

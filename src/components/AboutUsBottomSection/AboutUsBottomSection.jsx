@@ -3,7 +3,7 @@ import AboutUsBottomBox from "./AboutUsBottomBox/AboutUsBottomBox";
 
 const AboutUsBottomSection = () => {
   return (
-    <div className="flex flex-col  mt-[50px] pb-[10px]">
+    <div className="flex flex-col  mt-[0px] pb-[10px]">
       <div className="w-[90%] mx-auto h-[200px] py-[20px] px-[40px] box-border grid grid-cols-3 gap-5">
         <AboutUsBottomBox />
         <AboutUsBottomBox />

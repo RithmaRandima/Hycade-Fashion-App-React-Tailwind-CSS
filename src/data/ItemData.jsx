@@ -33,7 +33,6 @@ import img32 from "../assets/item-32.jpg";
 import img33 from "../assets/item-33.jpeg";
 import img34 from "../assets/item-34.webp";
 import img35 from "../assets/item-35.webp";
-import { FaL } from "react-icons/fa6";
 
 export const itemsData = [
   {
