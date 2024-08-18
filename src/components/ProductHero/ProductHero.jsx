@@ -1,5 +1,4 @@
 import React from "react";
-import img from "../../assets/blog-1.jpg";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -12,7 +11,6 @@ import img4 from "../../assets/blog-2.jpg";
 import img5 from "../../assets/blog-6.jpg";
 import img6 from "../../assets/hero-bg-3.webp";
 import img7 from "../../assets/staff-4.jpg";
-import Item from "../Item/Item";
 import { Background, Parallax } from "react-parallax";
 
 const imgContainerImg1 = [img1, img2, img3];
@@ -117,7 +115,7 @@ const ProductHero = (props) => {
         </Background>
         <div className="absolute z-10 w-[100%] h-[55vh] bg-gradient-to-l from-black to-black/50 flex  flex-col justify-center items-center">
           <h1 className="absolute right-[50px] text-[70px] tracking-[2px] italic font-[900] text-white">
-            Rithma {props.productType}
+            {props.product_title}
           </h1>
           <div className="absolute top-[50%] translate-y-[-50%] left-[530px]">
             <p className="text-[46px] font-[500] text-yellow-400">
@@ -131,7 +129,7 @@ const ProductHero = (props) => {
             </button>
           </div>
           {/* overlay text */}
-          <div className="absolute bottom-0 bg-white w-fit right-0 text-[15px] font-[700] px-8 py-1 tracking-[3px]">
+          <div className="absolute bottom-0 bg-white w-fit right-0 text-[13px] font-[400] px-6 py-1 tracking-[6px]">
             fresh and fashionable item with <span>Hycade</span>
           </div>
         </div>

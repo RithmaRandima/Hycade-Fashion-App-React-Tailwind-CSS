@@ -4,7 +4,7 @@ import Item from "../Item/Item";
 
 const ProductItemsSection = () => {
   return (
-    <div>
+    <div className="flex flex-col items-center justify-between">
       {/* product sort section */}
       <div className="mt-[130px] mb-[30px] w-[90%] flex items-center justify-between mx-auto">
         <p className="text-[18px] tracking-[1px] font-[500]">
@@ -29,6 +29,10 @@ const ProductItemsSection = () => {
         <Item />
         <Item />
       </div>
+
+      <button className="border-2 border-black px-7 py-2 font-[800] tracking-[2px] hover:text-white text-[13px] hover:bg-black">
+        show more
+      </button>
     </div>
   );
 };
