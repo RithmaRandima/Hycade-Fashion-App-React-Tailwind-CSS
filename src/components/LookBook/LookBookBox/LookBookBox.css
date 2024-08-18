@@ -1,0 +1,16 @@
+.look-book-box:hover img {
+  transform: scale(1.02);
+}
+
+.look-book-box:hover .look-book-box-overlay {
+  opacity: 1;
+}
+
+.look-book-box:hover .look-book-box-overlay-text {
+  opacity: 1;
+  top: 32%;
+}
+
+.look-book-box:hover .look-book-buttons {
+  bottom: 0;
+}

@@ -5,6 +5,7 @@ import AboutProgressSection from "../components/AboutProgressSection/AboutProgre
 import AboutParallaxShop from "../components/AboutParallaxShop/AboutParallaxShop";
 import Testimonials from "../components/Testimonials/Testimonials";
 import PricingSection from "../components/PricingSection/PricingSection";
+import LookBook from "../components/LookBook/LookBook";
 
 const AboutUsPage = () => {
   return (
@@ -14,6 +15,7 @@ const AboutUsPage = () => {
       <AboutProgressSection />
       <AboutParallaxShop />
       <PricingSection />
+      <LookBook />
       <Testimonials />
     </div>
   );
