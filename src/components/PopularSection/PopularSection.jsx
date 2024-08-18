@@ -33,10 +33,17 @@ const PopularSection = () => {
         </div>
 
         {/* items section */}
-        <div className="w-[92%] mx-auto h-[100%] grid grid-cols-4  gap-[30px] pb-[40px]">
+        <div className="w-[92%] mx-auto h-[100%] grid grid-cols-4  grid-rows-2 gap-[30px] pb-[40px]">
           {itemsData.map((item) => {
             if (item.popular === true) {
-              return <Item img={item.img} key={item.id} />;
+              return (
+                <Item
+                  img={item.img}
+                  key={item.id}
+                  price={item.price}
+                  newItems={item.newItems}
+                />
+              );
             } else {
               return null;
             }

@@ -1,8 +1,9 @@
 import React from "react";
 import { FaArrowDownWideShort } from "react-icons/fa6";
 import Item from "../Item/Item";
+import { itemsData } from "../../data/ItemData";
 
-const ProductItemsSection = () => {
+const ProductItemsSection = (props) => {
   return (
     <div className="flex flex-col items-center justify-between">
       {/* product sort section */}
@@ -19,15 +20,20 @@ const ProductItemsSection = () => {
         </div>
       </div>
       <div className="w-[95%] py-[20px] overflow-hidden   grid grid-cols-4 gap-5 mx-auto">
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
-        <Item />
+        {itemsData.map((item, i) => {
+          if (props.category === item.category) {
+            return (
+              <Item
+                key={item.id}
+                img={item.img}
+                price={item.price}
+                newItems={item.newItems}
+              />
+            );
+          } else {
+            return null;
+          }
+        })}
       </div>
 
       <button className="border-2 border-black px-7 py-2 font-[800] tracking-[2px] hover:text-white text-[13px] hover:bg-black">

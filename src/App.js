@@ -58,7 +58,7 @@ function App() {
                 <Products
                   // image={men_banner}
                   category="women"
-                  product_title="Men's"
+                  product_title="Women's"
                 />
               }
             />
@@ -67,8 +67,8 @@ function App() {
               element={
                 <Products
                   // image={men_banner}
-                  category="men"
-                  product_title="Men's"
+                  category="kid"
+                  product_title="Kids's"
                 />
               }
             />

@@ -29,7 +29,7 @@ const Item = (props) => {
       </div>
 
       <h1 className="bg-black text-white hover:text-yellow-400 w-fit mx-auto mt-3 text-[17px] font-[900] px-2 tracking-[2px]">
-        $ {props.price}100.00
+        $ {props.price}
       </h1>
       <div className="flex gap-3 mt-[10px] justify-center items-center">
         <IoMdStar />
@@ -38,6 +38,15 @@ const Item = (props) => {
         <IoMdStar />
         <IoMdStar />
       </div>
+
+      {/*new sticker */}
+      {props.newItems === true ? (
+        <div className="z-[30] absolute top-[10px] bg-black text-white px-3 py-1 tracking-[3px] text-[12px] font-[700] left-[10px]">
+          new
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 };

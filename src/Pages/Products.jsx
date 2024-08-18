@@ -1,5 +1,4 @@
 import React from "react";
-import ProductHero from "../components/ProductHero/ProductHero";
 import ProductItemsSection from "../components/ProductItemsSection/ProductItemsSection";
 
 import "slick-carousel/slick/slick.css";
@@ -45,7 +44,7 @@ const Products = (props) => {
             />
           </Background>
           <div className="absolute z-10 w-[100%] h-[55vh] bg-gradient-to-l from-black to-black/50 flex  flex-col justify-center items-center">
-            <h1 className="absolute right-[50px] text-[70px] tracking-[2px] italic font-[900] text-white">
+            <h1 className="absolute right-[50px] text-[60px] tracking-[2px] italic font-[900] text-white">
               {props.product_title}
             </h1>
             <div className="absolute top-[50%] translate-y-[-50%] left-[530px]">
@@ -90,7 +89,7 @@ const Products = (props) => {
         </div>
       </div>
       {/* product container */}
-      <ProductItemsSection />
+      <ProductItemsSection category={props.category} />
     </div>
   );
 };

@@ -74,7 +74,14 @@ const NewArrivals = () => {
           <Slider {...settings}>
             {itemsData.map((item) => {
               if (item.newItems === true) {
-                return <Item img={item.img} key={item.id} />;
+                return (
+                  <Item
+                    img={item.img}
+                    key={item.id}
+                    price={item.price}
+                    newItems={item.newItems}
+                  />
+                );
               } else {
                 return null;
               }
