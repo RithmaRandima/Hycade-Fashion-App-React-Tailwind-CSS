@@ -1,5 +1,5 @@
 import React from "react";
-import bgImg from "../../assets/8909.jpg";
+import bgImg from "../../assets/Box-Outline.jpg";
 import Slider from "react-slick";
 import img1 from "../../assets/new-items-1.jpg";
 import img2 from "../../assets/lookbook-5.jpg";

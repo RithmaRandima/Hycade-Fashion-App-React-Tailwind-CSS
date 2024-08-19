@@ -1,6 +1,6 @@
 import React from "react";
 import { Background, Parallax } from "react-parallax";
-import img1 from "../../assets/hero-bg-4.jpg";
+import img1 from "../../assets/blog-7.jpg";
 
 const AboutUs = () => {
   return (
@@ -13,8 +13,8 @@ const AboutUs = () => {
             className=" w-[100%] h-[100%] object-cover"
           />
         </Background>
-        <div className="absolute z-10 w-[100%] h-[55vh] bg-gradient-to-t from-black/50 to-black/20 flex justify-center items-center">
-          <h1 className="text-[#fff] text-[70px]">about us</h1>
+        <div className="absolute w-[100%] h-[55vh] bg-gradient-to-t from-black/50 to-black/20 flex justify-center items-center">
+          <h1 className="text-[#fff] text-[65px] font-[500]">about us</h1>
         </div>
       </Parallax>
     </div>

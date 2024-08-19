@@ -37,7 +37,7 @@ const Navbar = () => {
 
       {/* link section */}
       <div>
-        <ul className=" flex gap-8">
+        <ul className=" flex gap-10">
           <li
             className="flex items-center gap-2 tracking-[2px] font-[500] cursor-pointer"
             onClick={() => {

@@ -1,5 +1,5 @@
 import React from "react";
-import img1 from "../../../assets/8241.jpg";
+import img1 from "../../../assets/Box-Outline.jpg";
 
 const BlogTitleBox = (props) => {
   return (

@@ -1,11 +1,11 @@
 import React from "react";
 import "./AboutProgressSection.css";
-import bgImg from "../../assets/8909.jpg";
+import bgImg from "../../assets/Box-Outline.jpg";
 
 const AboutProgressSection = () => {
   return (
     <div
-      className="about-progress-section w-[100%] h-[80vh] px-6 py-7 "
+      className="about-progress-section w-[90%] mx-auto h-[70vh] px-3 py-4 "
       style={{ backgroundImage: `url(${bgImg})`, backgroundSize: "cover" }}
     >
       <div className="w-[100%] h-[100%] bg-white grid grid-cols-2">

@@ -1,18 +1,20 @@
 import React, { useContext } from "react";
-import img1 from "../../assets/hero-bg-2.webp";
+import img1 from "../../assets/blog-1.jpg";
+import img2 from "../../assets/blog-3.jpg";
+import img3 from "../../assets/footer-bg.jpg";
+import img4 from "../../assets/item-2.jpeg";
+import img5 from "../../assets/lookbook-5.jpg";
+import img6 from "../../assets/new-items-2.jpg";
 import { ShopContext } from "../../App";
 import {
   FaFacebook,
   FaFacebookF,
-  FaGooglePlus,
   FaGooglePlusG,
   FaInstagram,
-  FaInstagramSquare,
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
 import { LiaLinkedinIn } from "react-icons/lia";
-import { GoOrganization } from "react-icons/go";
 
 const Sidebar = () => {
   const { sideBar, sideBarValue } = useContext(ShopContext);
@@ -44,35 +46,35 @@ const Sidebar = () => {
             </div>
             <div className="w-[100%] h-[90px]">
               <img
-                src={img1}
+                src={img2}
                 className="w-[100%] h-[100%] object-cover"
                 alt=""
               />
             </div>
             <div className="w-[100%] h-[90px]">
               <img
-                src={img1}
+                src={img3}
                 className="w-[100%] h-[100%] object-cover"
                 alt=""
               />
             </div>
             <div className="w-[100%] h-[90px]">
               <img
-                src={img1}
+                src={img4}
                 className="w-[100%] h-[100%] object-cover"
                 alt=""
               />
             </div>
             <div className="w-[100%] h-[90px]">
               <img
-                src={img1}
+                src={img5}
                 className="w-[100%] h-[100%] object-cover"
                 alt=""
               />
             </div>
             <div className="w-[100%] h-[90px]">
               <img
-                src={img1}
+                src={img6}
                 className="w-[100%] h-[100%] object-cover"
                 alt=""
               />

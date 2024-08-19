@@ -1,5 +1,4 @@
 import React from "react";
-import img1 from "../../../assets/hero-bg-1.jpg";
 import "./AboutUsBottomBox.css";
 
 const AboutUsBottomBox = (props) => {
@@ -7,22 +6,21 @@ const AboutUsBottomBox = (props) => {
     <div className="about-bottom-box w-[100%] h-[100%] pb-[20px]">
       <div className="h-[200px] w-[100%] bg-black overflow-hidden">
         <img
-          // src={props.img}
-          src={img1}
+          src={props.img}
           className="w-[100%] h-[100%] object-cover hover:scale-105 duration-300"
           alt={props.img}
         />
       </div>
       {/* information */}
       <div className="pr-[12px]">
-        <h1 className="text-black text-[27px] my-4 font-[600] tracking-[2px]">
-          {props.title}rithma
+        <h1 className="text-black text-[22px] my-4 font-[600] tracking-[2px]">
+          {props.title} Lorem ipsum dolor.
         </h1>
         <p className="tracking-[1px] ">
           {props.description}
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea
           blanditiis perferendis atque vel cupiditate reprehenderit nobis ab
-          distinctio inventore! Consequatur!
+          distinctio
         </p>
         <div className="about-bottom-btn relative mt-[23px] text-[16px] tracking-[1px] font-[700] pb-[10px]">
           <p className="cursor-pointer">see more</p>
