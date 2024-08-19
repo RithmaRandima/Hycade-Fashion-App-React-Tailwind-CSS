@@ -6,7 +6,7 @@ import img3 from "../../assets/lookbook-2.jpg";
 import img5 from "../../assets/new-items-3.jpg";
 import img6 from "../../assets/lookbook-4.jpg";
 import img7 from "../../assets/lookbook-6.jpg";
-import { motion } from "framer-motion";
+import textImg from "../../assets/about-placeholder-img.png";
 import Slider from "react-slick";
 
 const imgs = [img1, img2, img3, img5, img6, img7];
@@ -140,7 +140,7 @@ const AboutParallaxShop = () => {
                   <img
                     src={img}
                     alt="fill murray"
-                    className="w-[100%] h-[210px] object-cover"
+                    className="w-[100%] h-[219px] object-cover"
                   />
                 );
               })}
@@ -150,7 +150,7 @@ const AboutParallaxShop = () => {
       </div>
 
       {/* right side */}
-      <div className="w-[40vw] h-[100%] flex items-center justify-center py-10">
+      <div className="w-[40vw] h-[100%] flex items-center justify-center py-10 relative">
         <div className="w-[90%] h-[100%]">
           <h1 className="font-[800] lowercase text-[33px]">
             The Company You Trust In
@@ -188,6 +188,14 @@ const AboutParallaxShop = () => {
               Tempora labore
             </li>
           </ul>
+        </div>
+
+        <div className="absolute opacity-15 bottom-0 right-0 w-[500px] h-[500px]">
+          <img
+            src={textImg}
+            className="w-[100%] h-[100%] object-contain"
+            alt=""
+          />
         </div>
       </div>
     </div>

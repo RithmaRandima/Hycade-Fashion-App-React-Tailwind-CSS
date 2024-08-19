@@ -3,9 +3,9 @@ import { Background, Parallax } from "react-parallax";
 // import bgImg from "../../assets/pexels-scottwebb-2117938.jpg";
 import parallaxLeft from "../../assets/paralex-shop-left.jpg";
 import parallaxRight from "../../assets/paralex-shop-right.jpg";
-import img2 from "../../assets/pngwing.com (7).png";
-import img3 from "../../assets/pngwing.com (9).png";
-import img4 from "../../assets/pngwing.com (10).png";
+import img1 from "../../assets/parallax-img-1.png";
+import img2 from "../../assets/parallax-img-2.png";
+import img3 from "../../assets/parallax-img-3.png";
 import { motion } from "framer-motion";
 
 const ParallaxShop = () => {
@@ -40,7 +40,7 @@ const ParallaxShop = () => {
             top-[150px]"
           >
             <img
-              src={img2}
+              src={img1}
               className="w-[100%] h-[100%] object-contain "
               alt=""
             />
@@ -67,7 +67,7 @@ const ParallaxShop = () => {
             top-[340px]"
           >
             <img
-              src={img4}
+              src={img3}
               className="w-[100%] h-[100%] object-contain "
               alt=""
             />
@@ -94,7 +94,7 @@ const ParallaxShop = () => {
             top-[260px]"
           >
             <img
-              src={img3}
+              src={img2}
               className="w-[100%] h-[100%] object-contain "
               alt=""
             />

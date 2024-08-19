@@ -25,6 +25,8 @@ const Testimonials = () => {
         <Slider {...settings}>
           <TestimonialBox />
           <TestimonialBox />
+          <TestimonialBox />
+          <TestimonialBox />
         </Slider>
       </div>
     </div>
