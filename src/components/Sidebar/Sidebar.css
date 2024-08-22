@@ -1,0 +1,19 @@
+.product-link .product-link-left-arrow {
+  position: absolute;
+  left: 110px;
+  top: 40%;
+  font-size: 15px;
+  animation: left-arrow-btn 2s ease-in-out infinite;
+}
+
+@keyframes left-arrow-btn {
+  0% {
+    transform: scale(1) translateX(-50%);
+  }
+  50% {
+    transform: scale(1.4) translateX(-40%);
+  }
+  100% {
+    transform: scale(1) translateX(-50%);
+  }
+}

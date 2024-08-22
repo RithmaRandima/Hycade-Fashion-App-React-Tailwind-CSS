@@ -5,6 +5,7 @@ import img3 from "../../assets/footer-bg.jpg";
 import img4 from "../../assets/item-2.jpeg";
 import img5 from "../../assets/lookbook-5.jpg";
 import img6 from "../../assets/new-items-2.jpg";
+import "./Sidebar.css";
 import { ShopContext } from "../../App";
 import {
   FaFacebook,
@@ -15,10 +16,11 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 import { LiaLinkedinIn } from "react-icons/lia";
-import { Link } from "react-router-dom";
+import { IoIosArrowBack } from "react-icons/io";
 
 const Sidebar = () => {
   const { sideBar, sideBarValue } = useContext(ShopContext);
+
   return (
     <div
       className={
@@ -36,72 +38,142 @@ const Sidebar = () => {
       {/* contact info */}
       {sideBarValue === "contact info" && (
         <div className="w-[100%] ">
-          {/* grid section */}
-          <div className="w-[90%] h-[205px]  mx-auto  grid grid-cols-3 gap-2">
-            <div className="w-[100%] h-[90px]">
-              <img
-                src={img1}
-                className="w-[100%] h-[100%] object-cover"
-                alt=""
-              />
+          {/* contact Info section */}
+          <div className="hidden md:block">
+            {/* grid section */}
+            <div className="w-[90%] h-[205px]  mx-auto  grid grid-cols-3 gap-2">
+              <div className="w-[100%] h-[90px]">
+                <img
+                  src={img1}
+                  className="w-[100%] h-[100%] object-cover"
+                  alt=""
+                />
+              </div>
+              <div className="w-[100%] h-[90px]">
+                <img
+                  src={img2}
+                  className="w-[100%] h-[100%] object-cover"
+                  alt=""
+                />
+              </div>
+              <div className="w-[100%] h-[90px]">
+                <img
+                  src={img3}
+                  className="w-[100%] h-[100%] object-cover"
+                  alt=""
+                />
+              </div>
+              <div className="w-[100%] h-[90px]">
+                <img
+                  src={img4}
+                  className="w-[100%] h-[100%] object-cover"
+                  alt=""
+                />
+              </div>
+              <div className="w-[100%] h-[90px]">
+                <img
+                  src={img5}
+                  className="w-[100%] h-[100%] object-cover"
+                  alt=""
+                />
+              </div>
+              <div className="w-[100%] h-[90px]">
+                <img
+                  src={img6}
+                  className="w-[100%] h-[100%] object-cover"
+                  alt=""
+                />
+              </div>
             </div>
-            <div className="w-[100%] h-[90px]">
-              <img
-                src={img2}
-                className="w-[100%] h-[100%] object-cover"
-                alt=""
-              />
-            </div>
-            <div className="w-[100%] h-[90px]">
-              <img
-                src={img3}
-                className="w-[100%] h-[100%] object-cover"
-                alt=""
-              />
-            </div>
-            <div className="w-[100%] h-[90px]">
-              <img
-                src={img4}
-                className="w-[100%] h-[100%] object-cover"
-                alt=""
-              />
-            </div>
-            <div className="w-[100%] h-[90px]">
-              <img
-                src={img5}
-                className="w-[100%] h-[100%] object-cover"
-                alt=""
-              />
-            </div>
-            <div className="w-[100%] h-[90px]">
-              <img
-                src={img6}
-                className="w-[100%] h-[100%] object-cover"
-                alt=""
-              />
+
+            {/* details */}
+            <div className="text-left w-[100%] mx-auto font-sans">
+              <div className="my-3">
+                <h1 className="font-bold text-[19px]">Email</h1>
+                <p className="text-[14px]">hycade@fashion.com</p>
+              </div>
+
+              <div className="my-3">
+                <h1 className="font-bold text-[19px]">Phone</h1>
+                <p className="text-[14px] mb-2">Hycade shop + 1 473 483 384</p>
+                <p className="text-[14px]"> Hycade cafe + 1 474 499 384</p>
+              </div>
+
+              <div className="my-2">
+                <h1 className="font-bold text-[19px]">Follow Us</h1>
+                <div className="flex justify-between items-center mt-3 w-[50%]">
+                  <FaFacebook className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
+                  <FaTwitter className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
+                  <FaLinkedin className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
+                  <FaInstagram className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
+                </div>
+              </div>
             </div>
           </div>
 
-          {/* details */}
-          <div className="text-left w-[100%] mx-auto font-sans">
-            <div className="my-3">
-              <h1 className="font-bold text-[19px]">Email</h1>
-              <p className="text-[14px]">hycade@fashion.com</p>
-            </div>
+          <div className="w-[100%] h-[280px]">
+            <ul className="w-[100%] h-[100%] flex flex-col  items-center justify-between gap-1">
+              <li className="w-[100%] h-[100%] flex items-center justify-center text-[17px] font-[500] hover:text-yellow-400 cursor-pointer">
+                Home
+              </li>
 
-            <div className="my-3">
-              <h1 className="font-bold text-[19px]">Phone</h1>
-              <p className="text-[14px] mb-2">Hycade shop + 1 473 483 384</p>
-              <p className="text-[14px]"> Hycade cafe + 1 474 499 384</p>
-            </div>
+              <li className="w-[100%] h-[100%] flex items-center justify-center text-[17px] font-[500] hover:text-yellow-400 cursor-pointer">
+                About
+              </li>
+              <li className="product-link w-[100%] h-[100%] flex gap-[10px] items-center justify-center text-[20px] font-[500] hover:text-yellow-400 cursor-pointer relative">
+                <div>
+                  <IoIosArrowBack className="product-link-left-arrow" />
+                </div>
+                <p>Products</p>
 
-            <div className="my-2">
-              <h1 className="font-bold text-[19px]">Follow Us</h1>
-              <div className="flex justify-between items-center mt-3 w-[50%]">
-                <FaFacebook className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
-                <FaTwitter className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
-                <FaLinkedin className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
-                <FaInstagram className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
+                <div className="product-link-section">
+                  {/* product link */}
+                  <div className="product-link-item flex items-center gap-2">
+                    <span className="link-item-yellow-bar h-[3px]  bg-yellow-400 w-[0px] duration-300 rounded-full"></span>
+                    <p className="font-[500] text-[17px] tracking-[2px]">
+                      men's
+                    </p>
+                  </div>
+
+                  {/* product link */}
+                  <div className="product-link-item flex items-center gap-2">
+                    <span className="link-item-yellow-bar h-[3px]  bg-yellow-400 w-[0px] duration-300 rounded-full"></span>
+                    <p className="font-[500] text-[17px] tracking-[2px]">
+                      women's
+                    </p>
+                  </div>
+
+                  {/* product link */}
+                  <div className="product-link-item flex items-center gap-2">
+                    <span className="link-item-yellow-bar h-[3px]  bg-yellow-400 w-[0px] duration-300 rounded-full"></span>
+                    <p className="font-[500] text-[17px] tracking-[2px]">
+                      kid's
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li className="w-[100%] h-[100%] flex items-center justify-center text-[17px] font-[500] hover:text-yellow-400 cursor-pointer">
+                Pricing
+              </li>
+              <li className="w-[100%] h-[100%] flex items-center justify-center text-[17px] font-[500] hover:text-yellow-400 cursor-pointer">
+                Blog
+              </li>
+            </ul>
+            <div className="text-left w-[100%] mx-auto font-sans">
+              <div className="my-3">
+                <h1 className="font-bold text-[19px]">Phone</h1>
+                <p className="text-[14px] mb-2">Hycade shop + 1 473 483 384</p>
+                <p className="text-[14px]"> Hycade cafe + 1 474 499 384</p>
+              </div>
+
+              <div className="my-2">
+                <h1 className="font-bold text-[19px]">Follow Us</h1>
+                <div className="flex justify-between items-center mt-3 w-[50%]">
+                  <FaFacebook className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
+                  <FaTwitter className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
+                  <FaLinkedin className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
+                  <FaInstagram className="text-[20px] text-[#000] hover:scale-110 cursor-pointer duration-200" />
+                </div>
               </div>
             </div>
           </div>
