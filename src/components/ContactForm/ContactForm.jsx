@@ -10,12 +10,12 @@ import { FaInstagram, FaLinkedinIn, FaLocationDot } from "react-icons/fa6";
 import { PiPinterestLogoFill } from "react-icons/pi";
 const ContactForm = () => {
   return (
-    <div className="about-progress-section w-[100%] h-[80vh] grid grid-cols-3 bg-white">
+    <div className="w-[100%] md:h-[80vh] h-[100%] grid grid-cols-1 md:grid-cols-3 bg-white pb-5">
       <div className="w-[100%] h-[100%] flex items-center">
         {/* info section */}
-        <div className="flex flex-col items-start pl-[30px]">
+        <div className="flex flex-col md:items-start items-center pl-[30px] mb-6">
           <h1 className="text-[50px] font-[500] mb-[10px]">contact us</h1>
-          <p className="text-left font-[200]  mb-[15px]">
+          <p className=" font-[200] w-[80%] md:w-[100%]  mb-[15px] text-center md:text-left">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
             molestiae quas optio consectetur earum fugit.
           </p>
@@ -48,7 +48,7 @@ const ContactForm = () => {
               </p>
             </div>
 
-            <div className="w-[100%] h-[40px] bottom-0 flex items-center justify-center text-black gap-[20px] text-[17px] ">
+            <div className="w-[100%] h-[40px] bottom-0 flex items-center justify-center md:justify-start text-black gap-[30px] text-[20px] mt-[20px] ">
               <FaFacebook className="hover:text-yellow-500 hover:scale-110 duration-200" />
               <PiPinterestLogoFill className="hover:text-yellow-500 hover:scale-110 duration-200" />
               <FaInstagram className="hover:text-yellow-500 hover:scale-110 duration-200" />
@@ -60,8 +60,8 @@ const ContactForm = () => {
       </div>
 
       {/* Form section */}
-      <div className="w-[100%]  col-span-2 h-[100%] flex items-center pr-[60px]">
-        <div className="flex flex-col gap-[30px] pl-[70px]  w-[100%]">
+      <div className="w-[95%] mx-auto md:w-[100%]  md:col-span-2 h-[100%] flex items-center md:pr-[60px]">
+        <div className="flex flex-col gap-[30px] md:pl-[70px]  w-[100%]">
           {/* input box */}
           <div className="w-[100%]">
             <input

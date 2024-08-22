@@ -2,3 +2,11 @@
   height: 50%;
   opacity: 1;
 }
+
+@media screen and (max-width: 1024px) {
+  .hero-bottom-box:nth-child(1),
+  .hero-bottom-box:nth-child(3) {
+    height: 200px !important;
+    width: 90%;
+  }
+}

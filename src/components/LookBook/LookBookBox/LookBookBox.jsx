@@ -5,7 +5,7 @@ import { FaEye, FaHeart } from "react-icons/fa";
 
 const LookBookBox = (props) => {
   return (
-    <div className="look-book-box w-[100%] h-[450px] relative overflow-hidden">
+    <div className="look-book-box w-[100%] h-[360px] md:h-[450px] relative overflow-hidden">
       <img
         // src={img1}
         src={props.img}

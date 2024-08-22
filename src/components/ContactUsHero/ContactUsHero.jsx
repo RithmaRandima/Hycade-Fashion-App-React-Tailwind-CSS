@@ -24,7 +24,7 @@ const ContactUsHero = () => {
   };
 
   return (
-    <div className="w-[100%] h-[60vh] relative mb-[100px]">
+    <div className="w-[100%] h-[55vh] md:h-[60vh] relative mb-[100px]">
       <Parallax strength={200} className="w-[100%] h-[100%] relative">
         <Background className="custom-bg w-[100vw] h-[100%] ">
           <img
@@ -33,16 +33,16 @@ const ContactUsHero = () => {
             className=" w-[100%] h-[100%] object-cover"
           />
         </Background>
-        <div className="absolute z-10 w-[100%] h-[60vh] bg-gradient-to-t from-black/80 to-black/10 flex  flex-col justify-center items-center">
-          <h1 className="text-[#fff] text-[70px]">contact us</h1>
-          <p className="w-[60%] text-center text-[15px] mt-3 tracking-[2px] text-white">
+        <div className="absolute z-10 w-[100%] h-[55vh] md:h-[60vh] bg-gradient-to-t from-black/80 to-black/10 flex  flex-col justify-center items-center">
+          <h1 className="text-[#fff] text-[65px] font-[500]">contact us</h1>
+          <p className="hidden md:block w-[60%] text-center text-[15px] mt-3 tracking-[2px] text-white">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
             quasi perspiciatis maxime? Id fugiat consequuntur ad fuga animi enim
             debitis laborum, laudantium assumenda quia. Sunt.
           </p>
         </div>
       </Parallax>
-      <div className="absolute w-[340px] h-[220px] bg-black  top-[270px] left-[20px] z-20">
+      <div className="absolute w-[340px] h-[220px] bg-black  top-[270px] left-[20px] z-20 border-[10px] md:border-none border-white">
         <Slider {...settings}>
           {imgList.map((img) => (
             <img
@@ -54,7 +54,7 @@ const ContactUsHero = () => {
         </Slider>
       </div>
 
-      <div className="absolute w-[160px] h-[160px]  top-[370px] left-[300px] z-20 overflow-hidden border-[10px] border-white">
+      <div className="absolute  w-[200px] h-[240px] md:w-[160px] md:h-[160px] top-[210px]  md:top-[370px] left-[320px]  md:left-[300px] z-20 overflow-hidden border-[10px] border-white">
         <img src={img5} className="w-[100%] h-[100%] object-cover" alt="" />
       </div>
     </div>

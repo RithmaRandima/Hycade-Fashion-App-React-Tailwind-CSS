@@ -6,13 +6,13 @@ import { staffData } from "../../data/StaffData";
 
 const Staff = () => {
   return (
-    <div className="w-[100%] h-[100%] mt-[130px] overflow-hidden">
+    <div className="w-[100%] h-[100%] mt-[150px] md:mt-[130px] overflow-hidden">
       {/* title */}
       <div className="text-center py-[40px]">
-        <h1 className="text-[45px] lowercase tracking-[2px] font-[500]">
+        <h1 className="text-[40px] md:text-[45px] lowercase tracking-[2px] font-[500]">
           Meet our Team
         </h1>
-        <p>
+        <p className="mx-auto w-[80%] md:w-[50%]">
           We design new products. You crowd-fund them at incredible prices.
           Grayson. Everybody wins.
         </p>
@@ -27,7 +27,7 @@ const Staff = () => {
       </div>
 
       {/* staff box section */}
-      <div className="w-[90%] h-[100%] mx-auto grid grid-cols-4 gap-[30px] mb-[20px]">
+      <div className="w-[90%] h-[100%] mx-auto grid grid-cols-2 md:grid-cols-4 gap-[30px] mb-[20px]">
         {staffData.map((data) => {
           return (
             <StaffBox

@@ -41,11 +41,11 @@ const AboutParallaxShop = () => {
   };
 
   return (
-    <div className="w-[100%] h-[85vh] mt-[150px] flex items-center">
+    <div className="w-[100%] h-[100%] md:h-[85vh] mt-[30px] md:mt-[150px] flex flex-col md:flex-row items-center">
       {/* left side */}
-      <div className="w-[60vw] h-[100vh] relative">
-        <Parallax strength={200} className="w-[100%] h-[100vh]">
-          <Background className="custom-bg w-[60vw] h-[100vh] overflow-hidden">
+      <div className="w-[100vw] md:w-[60vw] h-[70vh] md:h-[100vh] relative">
+        <Parallax strength={200} className="w-[100%] h-[70vh] md:h-[100vh]">
+          <Background className="custom-bg w-[100vw] md:w-[60vw] h-[100vh] overflow-hidden">
             <Slider {...settings}>
               {imgs.map((img) => {
                 return (
@@ -124,6 +124,7 @@ const AboutParallaxShop = () => {
             top-[300px]"
           ></div>
 
+          {/* left Side white box */}
           <div
             className="w-[20px] h-[20px] bg-white  absolute left-[170px]
             top-[340px]"
@@ -132,7 +133,7 @@ const AboutParallaxShop = () => {
           {/* left Side Image */}
           <div
             className="w-[250px] h-[250px] p-8  overflow-hidden bg-white absolute z-20 left-[0px]
-            top-[350px]"
+            top-[170px] md:top-[350px]"
           >
             <Slider {...settings2}>
               {imgs.map((img) => {
@@ -150,7 +151,7 @@ const AboutParallaxShop = () => {
       </div>
 
       {/* right side */}
-      <div className="w-[40vw] h-[100%] flex items-center justify-center py-10 relative">
+      <div className=" md:w-[40vw] h-[100%] flex items-center justify-center py-10 relative">
         <div className="w-[90%] h-[100%]">
           <h1 className="font-[800] lowercase text-[33px]">
             The Company You Trust In
@@ -164,14 +165,14 @@ const AboutParallaxShop = () => {
             <div className="flex-1 bg-black h-[100%] ml-[10px]"></div>
             <div className="flex-1 bg-black h-[100%] ml-[10px]"></div>
           </div>
-          <p className="font-[300] my-3 text-[16px] tracking-[1px]">
+          <p className="md:font-[300] my-3 text-[16px] tracking-[1px]">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
             deserunt tempore exercitationem doloremque officia perferendis
             labore! Totam aliquid repudiandae perspiciatis. Quibusdam fugit,
             accusamus ut iure maxime quo porro deleniti suscipit.
           </p>
 
-          <p className="font-[300] my-3 text-[16px] tracking-[1px]">
+          <p className="md:font-[300] my-3 text-[16px] tracking-[1px]">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
             deserunt ab quo esse neque nihil ipsum ipsam eius reiciendis quas?
           </p>
@@ -190,7 +191,7 @@ const AboutParallaxShop = () => {
           </ul>
         </div>
 
-        <div className="absolute opacity-15 bottom-0 right-0 w-[500px] h-[500px]">
+        <div className="absolute opacity-55 md:opacity-15 bottom-[-150px] md:bottom-0 right-0 w-[300px] h-[600px] md:w-[500px] md:h-[500px]">
           <img
             src={textImg}
             className="w-[100%] h-[100%] object-contain"

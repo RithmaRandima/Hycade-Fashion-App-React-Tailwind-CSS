@@ -9,7 +9,7 @@ const ShopNewsLetter = () => {
   return (
     <div className=" w-[100%] h-[70vh] mb-[120px] relative ">
       <Parallax strength={200} className="w-[100%] h-[100%] ">
-        <Background className="custom-bg w-[100vw] h-[100%]">
+        <Background className="custom-bg w-[100vw] h-[80vh] md:h-[100%]">
           <img
             src={bgImg}
             alt="fill murray"
@@ -18,10 +18,10 @@ const ShopNewsLetter = () => {
         </Background>
       </Parallax>
       {/* content */}
-      <div className="w-[100%] h-[100%] bg-black/60 absolute top-0 grid grid-cols-2">
+      <div className="w-[100%] h-[100%] bg-black/60 absolute top-0 grid md:grid-cols-2">
         {/* left section */}
         <div className="w-[100%] h-[100%]  flex items-center justify-center relative">
-          <div className=" text-white flex flex-col items-end ">
+          <div className=" text-white flex flex-col items-center md:items-end ">
             <p className="text-[38px] font-[700] ">
               black sneakers, so classy!
             </p>
@@ -47,13 +47,13 @@ const ShopNewsLetter = () => {
             </button>
           </div>
 
-          <div className="absolute w-[280px] h-[280px] bottom-[-80px] left-[70px]">
+          <div className="absolute w-[280px] h-[280px] bottom-[-120px] md:bottom-[-80px] left-[10px] md:left-[70px]">
             <img src={img3} className="w-[100%] h-[100%] object-cover" alt="" />
           </div>
         </div>
         {/* right section */}
-        <div className="w-[100%] h-[100%]  relative">
-          <div className="absolute w-[400px] h-[400px] bottom-[-180px] left-[180px]">
+        <div className="hidden md:block w-[100%] h-[100%]   relative">
+          <div className="absolute w-[400px] h-[400px] bottom-[-180px] z-30 left-[180px]">
             <img src={img1} className="w-[100%] h-[100%] object-cover" alt="" />
           </div>
 

@@ -44,7 +44,7 @@ const Blog = () => {
   return (
     <div className="w-[100%] h-[100%] pb-8 pt-[00px] scroll-smooth" id="blog">
       {/* title text */}
-      <div className="text-center w-[50%] mx-auto mb-[30px] m-[20px] flex items-center flex-col">
+      <div className="text-center w-[80%] md:w-[50%] mx-auto mb-[30px] m-[20px] flex items-center flex-col">
         <h1 className="text-[45px] font-[500] mb-4">blog</h1>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
@@ -60,16 +60,18 @@ const Blog = () => {
           <div className="flex-1 bg-black h-[100%] ml-[10px]"></div>
         </div>
       </div>
+
       {/* blog container */}
-      <div className="w-[93%] h-[100%]  mx-auto gap-4 grid grid-cols-3">
-        <div className="w-[100%] h-[455px]">
+      <div className="w-[93%] h-[100%]  mx-auto gap-4 grid md:grid-cols-3">
+        {/* col 01 */}
+        <div className=" hidden md:block w-[100%] h-[455px]">
           <Slider {...settings}>
             <BlogBox height={140} img={img2} />
             <BlogBox height={170} img={img3} />
           </Slider>
           <BlogTitleBox height={120} title="modern" />
         </div>
-
+        {/* col 02 */}
         <div className="w-[100%] h-[100%]">
           <BlogBox height={220} img={img1} />
           <BlogTitleBox
@@ -80,6 +82,7 @@ const Blog = () => {
           <BlogBox height={190} img={img4} />
         </div>
 
+        {/* col 03 */}
         <div className="w-[100%] h-[430px]">
           <Slider {...settings2}>
             <BlogBox height={180} img={img5} />

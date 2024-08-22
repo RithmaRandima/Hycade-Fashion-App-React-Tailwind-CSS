@@ -20,8 +20,10 @@ const Testimonials = () => {
   return (
     <div className="mt-[10px] w-[100%] h-[70vh] flex flex-col justify-center items-center">
       {/* testimonial container */}
-      <h1 className="text-[40px] font-[500] mb-[10px]">Why They Like us</h1>
-      <div className="w-[80%] mx-auto h-[45vh]">
+      <h1 className="text-[35px] md:text-[40px] font-[500]  mb-[20px] md:mb-[10px]">
+        Why They Like us
+      </h1>
+      <div className="w-[83%] md:w-[80%] mx-auto h-[45vh]">
         <Slider {...settings}>
           <TestimonialBox />
           <TestimonialBox />

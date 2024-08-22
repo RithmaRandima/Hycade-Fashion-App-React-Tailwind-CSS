@@ -36,7 +36,7 @@ const Navbar = () => {
       </div>
 
       {/* link section */}
-      <div>
+      <div className="hidden md:block">
         <ul className=" flex gap-10">
           <li
             className="flex items-center gap-2 tracking-[2px] font-[500] cursor-pointer"

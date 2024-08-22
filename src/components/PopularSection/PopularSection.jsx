@@ -8,7 +8,7 @@ const PopularSection = () => {
   return (
     <div className="w-[100%] h-[100%] flex flex-col bg-cover">
       <Parallax strength={500} className="w-[100%] h-[100%] text-center pb-12">
-        <Background className="custom-bg w-[100vw] h-[200vh] overflow-hidden">
+        <Background className="custom-bg w-[100vw] h-[280vh] md:h-[200vh] overflow-hidden">
           <img
             src={bgImg}
             alt="fill murray"
@@ -16,7 +16,7 @@ const PopularSection = () => {
           />
         </Background>
         {/* top text */}
-        <div className="text-center w-[50%] mx-auto m-[70px] flex items-center flex-col">
+        <div className="text-center w-[80%] md:w-[50%] mx-auto m-[70px] md:mt-[70px] mt-[40px] flex items-center flex-col">
           <h1 className="text-[45px] font-[500] mb-4">popular items</h1>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
@@ -33,7 +33,7 @@ const PopularSection = () => {
         </div>
 
         {/* items section */}
-        <div className="w-[92%] mx-auto h-[100%] grid grid-cols-4  grid-rows-2 gap-[30px] pb-[40px]">
+        <div className="w-[92%] mx-auto h-[100%] grid grid-cols-2 md:grid-cols-4  grid-rows-2 gap-[30px] pb-[40px]">
           {itemsData.map((item) => {
             if (item.popular === true) {
               return (

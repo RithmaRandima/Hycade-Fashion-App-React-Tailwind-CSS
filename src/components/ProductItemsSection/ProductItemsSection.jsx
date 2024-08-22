@@ -19,7 +19,7 @@ const ProductItemsSection = (props) => {
           </button>
         </div>
       </div>
-      <div className="w-[95%] py-[20px] overflow-hidden   grid grid-cols-4 gap-5 mx-auto">
+      <div className="w-[95%] py-[20px] overflow-hidden   grid grid-cols-2 md:grid-cols-4 gap-5 mx-auto">
         {itemsData.map((item, i) => {
           if (props.category === item.category) {
             return (

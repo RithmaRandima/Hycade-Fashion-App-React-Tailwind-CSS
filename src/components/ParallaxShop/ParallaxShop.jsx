@@ -10,9 +10,9 @@ import { motion } from "framer-motion";
 
 const ParallaxShop = () => {
   return (
-    <div className="w-[100%] h-[100vh] bg-blak flex">
+    <div className="w-[100%] h-[100vh] flex flex-row">
       {/* left side */}
-      <div className="w-[40vw] h-[100%]">
+      <div className="hidden md:block w-[40vw] h-[100%]">
         <img
           src={parallaxLeft}
           className="w-[100%] h-[100%] object-cover"
@@ -20,9 +20,9 @@ const ParallaxShop = () => {
         />
       </div>
       {/* right side */}
-      <div className="w-[60vw] h-[100vh] relative">
+      <div className="w-[100%] md:w-[60vw] h-[100vh] relative">
         <Parallax strength={200} className="w-[100%] h-[100vh]">
-          <Background className="custom-bg w-[60vw] h-[100vh] overflow-hidden">
+          <Background className="custom-bg w-[100vw]  md:w-[60vw] h-[100vh] overflow-hidden">
             <img
               src={parallaxRight}
               alt="fill murray"
@@ -36,7 +36,7 @@ const ParallaxShop = () => {
             transition={{
               duration: 3,
             }}
-            className="w-[300px] h-[300px]  b-black absolute left-[50px]
+            className="w-[240px] h-[240px]  md:w-[300px] md:h-[300px]  b-black absolute left-[50px]
             top-[150px]"
           >
             <img
@@ -63,7 +63,7 @@ const ParallaxShop = () => {
               duration: 3,
               delay: 0.2,
             }}
-            className="w-[260px] h-[260px] bghite absolute left-[-30px]
+            className="w-[200px] h-[200px] md:w-[260px] md:h-[260px]  absolute left-[-30px]
             top-[340px]"
           >
             <img
@@ -90,7 +90,7 @@ const ParallaxShop = () => {
               duration: 3,
               delay: 0.1,
             }}
-            className="w-[470px] h-[470px] absolute left-[280px]
+            className="w-[420px] h-[420px] md:w-[470px] md:h-[470px] absolute left-[220px] md:left-[280px]
             top-[260px]"
           >
             <img

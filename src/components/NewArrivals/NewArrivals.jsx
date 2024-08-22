@@ -52,7 +52,7 @@ const NewArrivals = () => {
           />
         </Background>
         {/* top text */}
-        <div className="text-center w-[50%] mx-auto m-[20px] flex items-center flex-col">
+        <div className="text-center w-[80%] md:w-[50%] mx-auto m-[20px] flex items-center flex-col">
           <h1 className="text-[45px] font-[500] mb-4">new arrivals</h1>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet

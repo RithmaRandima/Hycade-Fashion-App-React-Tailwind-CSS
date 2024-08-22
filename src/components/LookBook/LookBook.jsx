@@ -6,7 +6,7 @@ const LookBook = () => {
   return (
     <div className="w-[100%] h-[100%] flex flex-col items-center">
       {/* title text */}
-      <div className="text-center w-[50%] mx-auto mb-[30px] m-[20px] flex items-center flex-col">
+      <div className="text-center w-[80%] md:w-[50%] mx-auto mb-[30px] m-[20px] flex items-center flex-col">
         <h1 className="text-[45px] font-[500] mb-4">gallery</h1>
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
@@ -24,7 +24,7 @@ const LookBook = () => {
       </div>
 
       {/* gallery content */}
-      <div className="w-[98%] h-[100%] mx-auto grid grid-cols-4 p-3 gap-6">
+      <div className="w-[98%] h-[100%] mx-auto grid grid-cols-2 md:grid-cols-4 p-3 gap-6">
         {galleryData.map((data) => {
           return (
             <LookBookBox

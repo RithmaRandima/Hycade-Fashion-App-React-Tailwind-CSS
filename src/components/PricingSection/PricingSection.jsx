@@ -4,13 +4,13 @@ import "./PricingSection.css";
 
 const PricingSection = () => {
   return (
-    <div className="w-[100%] h-[100%] mt-[100px] bg-red300 pb-4">
+    <div className="w-[100%] h-[100%] mt-[30px] md:mt-[100px] bg-red300 pb-4">
       {/* title */}
       <div className="text-center py-[40px]">
         <h1 className="text-[45px] lowercase tracking-[2px] font-[500]">
           choose your plan
         </h1>
-        <p>
+        <p className=" w-[80%] mx-auto md:w-[50%]">
           We design new products. You crowd-fund them at incredible prices.
           Grayson. Everybody wins.
         </p>
@@ -25,7 +25,7 @@ const PricingSection = () => {
       </div>
 
       {/* pricing box section */}
-      <div className="w-[93%] h-[100%] mx-auto grid grid-cols-3 gap-[20px] mb-[20px]">
+      <div className="w-[90%] md:w-[93%] h-[100%] mx-auto grid md:grid-cols-3 gap-[20px] mb-[20px]">
         <PricingBox />
         <PricingBox />
         <PricingBox />
