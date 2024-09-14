@@ -1,9 +1,9 @@
 import React from "react";
 import HeroBottomBox from "./HeroBottomBox/HeroBottomBox";
 
-import img1 from "../../assets/hero-bottom-1.jpg";
-import img2 from "../../assets/hero-bottom-2.jpg";
-import img3 from "../../assets/hero-bottom-3.jpg";
+import img1 from "../../assets/hero-bottom-1.jpeg";
+import img2 from "../../assets/hero-bottom-2.jpeg";
+import img3 from "../../assets/hero-bottom-3.jpeg";
 const HeroBottomSection = () => {
   return (
     <div className="flex flex-col  mb-[40px] pb-[10px]  md:mt-[0] mt-[-120px]">

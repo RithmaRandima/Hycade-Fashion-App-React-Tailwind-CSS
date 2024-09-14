@@ -1,8 +1,8 @@
-import img1 from "../assets/lookbook-6.jpg";
-import img2 from "../assets/hero-bg-1.jpg";
-import img3 from "../assets/hero-bg-3.jpg";
-import img4 from "../assets/hero-bg-4.jpg";
-import img5 from "../assets/hero-bg-5.jpg";
+import img1 from "../assets/lookbook-6.jpeg";
+import img2 from "../assets/hero-bg-1.jpeg";
+import img3 from "../assets/hero-bg-3.jpeg";
+import img4 from "../assets/hero-bg-4.jpeg";
+import img5 from "../assets/hero-bg-5.jpeg";
 
 export const heroContentData = [
   {

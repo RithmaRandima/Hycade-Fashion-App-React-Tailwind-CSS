@@ -3,11 +3,18 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Sidebar from "./components/Sidebar/Sidebar";
 import { createContext, useState } from "react";
-import Shop from "./Pages/Shop";
-import AboutUsPage from "./Pages/AboutUsPage";
-import ContactUs from "./Pages/ContactUs";
+// import Shop from "./Pages/Shop";
+// import AboutUsPage from "./Pages/AboutUsPage";
+// import ContactUs from "./Pages/ContactUs";
 import Footer from "./components/Footer/Footer";
-import Products from "./Pages/Products";
+// import Products from "./Pages/Products";
+import { lazy } from "react";
+import { Suspense } from "react";
+
+const Shop = lazy(() => import("./Pages/Shop"));
+const AboutUsPage = lazy(() => import("./Pages/AboutUsPage"));
+const ContactUs = lazy(() => import("./Pages/ContactUs"));
+const Products = lazy(() => import("./Pages/Products"));
 
 export const ShopContext = createContext(null);
 
@@ -38,41 +45,25 @@ function App() {
       >
         <BrowserRouter>
           <Navbar />
-          <Routes>
-            <Route path="/" element={<Shop />} />
-            <Route path="/about" element={<AboutUsPage />} />
-            <Route path="/contact" element={<ContactUs />} />
-            <Route
-              path="/mens"
-              element={
-                <Products
-                  // image={men_banner}
-                  category="men"
-                  product_title="Men's"
-                />
-              }
-            />
-            <Route
-              path="/womens"
-              element={
-                <Products
-                  // image={men_banner}
-                  category="women"
-                  product_title="Women's"
-                />
-              }
-            />
-            <Route
-              path="/kids"
-              element={
-                <Products
-                  // image={men_banner}
-                  category="kid"
-                  product_title="Kids's"
-                />
-              }
-            />
-          </Routes>
+          <Suspense fallback={<h1>Loading...</h1>}>
+            <Routes>
+              <Route path="/" element={<Shop />} />
+              <Route path="/about" element={<AboutUsPage />} />
+              <Route path="/contact" element={<ContactUs />} />
+              <Route
+                path="/mens"
+                element={<Products category="men" product_title="Men's" />}
+              />
+              <Route
+                path="/womens"
+                element={<Products category="women" product_title="Women's" />}
+              />
+              <Route
+                path="/kids"
+                element={<Products category="kid" product_title="Kids's" />}
+              />
+            </Routes>
+          </Suspense>
           <Footer />
         </BrowserRouter>
         <Sidebar />

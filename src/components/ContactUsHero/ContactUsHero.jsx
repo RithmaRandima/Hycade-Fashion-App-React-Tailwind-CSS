@@ -1,10 +1,10 @@
 import React from "react";
 import { Background, Parallax } from "react-parallax";
-import img1 from "../../assets/hero-bg-4.jpg";
-import img2 from "../../assets/blog-1.jpg";
+import img1 from "../../assets/hero-bg-4.jpeg";
+import img2 from "../../assets/blog-1.jpeg";
 import img3 from "../../assets/hero-bg-3.webp";
-import img4 from "../../assets/hero-bg-4.jpg";
-import img5 from "../../assets/hero-bg-1.jpg";
+import img4 from "../../assets/hero-bg-4.jpeg";
+import img5 from "../../assets/hero-bg-1.jpeg";
 
 import Slider from "react-slick";
 

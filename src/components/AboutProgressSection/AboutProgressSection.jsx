@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutProgressSection.css";
-import bgImg from "../../assets/Box-Outline.jpg";
+import bgImg from "../../assets/Box-Outline.jpeg";
 
 const AboutProgressSection = () => {
   return (

@@ -1,11 +1,11 @@
 import React from "react";
-import bgImg from "../../assets/Box-Outline.jpg";
+import bgImg from "../../assets/Box-Outline.jpeg";
 import Slider from "react-slick";
-import img1 from "../../assets/new-items-1.jpg";
-import img2 from "../../assets/lookbook-5.jpg";
-import img3 from "../../assets/new-items-2.jpg";
+import img1 from "../../assets/new-items-1.jpeg";
+import img2 from "../../assets/lookbook-5.jpeg";
+import img3 from "../../assets/new-items-2.jpeg";
 import img4 from "../../assets/new-items-3.jpg";
-import img5 from "../../assets/lookbook-6.jpg";
+import img5 from "../../assets/lookbook-6.jpeg";
 import { IoMdStar } from "react-icons/io";
 
 const NewItemsSection = () => {

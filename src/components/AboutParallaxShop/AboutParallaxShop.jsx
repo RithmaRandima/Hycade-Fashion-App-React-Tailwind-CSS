@@ -1,11 +1,11 @@
 import React from "react";
 import { Background, Parallax } from "react-parallax";
-import img1 from "../../assets/lookbook-1.jpg";
-import img2 from "../../assets/lookbook-5.jpg";
-import img3 from "../../assets/lookbook-2.jpg";
+import img1 from "../../assets/lookbook-1.jpeg";
+import img2 from "../../assets/lookbook-5.jpeg";
+import img3 from "../../assets/lookbook-2.jpeg";
 import img5 from "../../assets/new-items-3.jpg";
-import img6 from "../../assets/lookbook-4.jpg";
-import img7 from "../../assets/lookbook-6.jpg";
+import img6 from "../../assets/lookbook-4.jpeg";
+import img7 from "../../assets/lookbook-6.jpeg";
 import textImg from "../../assets/about-placeholder-img.png";
 import Slider from "react-slick";
 

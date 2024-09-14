@@ -1,8 +1,8 @@
 import React from "react";
 import AboutUsBottomBox from "./AboutUsBottomBox/AboutUsBottomBox";
-import img1 from "../../assets/lookbook-1.jpg";
-import img2 from "../../assets/paralex-shop-left.jpg";
-import img3 from "../../assets/new-items-2.jpg";
+import img1 from "../../assets/lookbook-1.jpeg";
+import img2 from "../../assets/paralex-shop-left.jpeg";
+import img3 from "../../assets/new-items-2.jpeg";
 
 const AboutUsBottomSection = () => {
   return (

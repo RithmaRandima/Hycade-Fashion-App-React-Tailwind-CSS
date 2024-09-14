@@ -1,5 +1,4 @@
 import React from "react";
-import img1 from "../../assets/placeholder-img.jpg";
 
 const Placeholdertext = () => {
   return (

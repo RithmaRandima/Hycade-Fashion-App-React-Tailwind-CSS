@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import img1 from "../../assets/blog-1.jpg";
-import img2 from "../../assets/blog-3.jpg";
+import img1 from "../../assets/blog-1.jpeg";
+import img2 from "../../assets/blog-3.jpeg";
 import img3 from "../../assets/footer-bg.jpg";
 import img4 from "../../assets/item-2.jpeg";
-import img5 from "../../assets/lookbook-5.jpg";
-import img6 from "../../assets/new-items-2.jpg";
+import img5 from "../../assets/lookbook-5.jpeg";
+import img6 from "../../assets/new-items-2.jpeg";
 import "./Sidebar.css";
 import { ShopContext } from "../../App";
 import {

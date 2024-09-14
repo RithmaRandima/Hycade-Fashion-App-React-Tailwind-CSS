@@ -5,13 +5,13 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import BlogTitleBox from "./BlogTitleBox/BlogTitleBox";
 
-import img1 from "../../assets/blog-1.jpg";
-import img2 from "../../assets/blog-2.jpg";
-import img3 from "../../assets/blog-3.jpg";
-import img4 from "../../assets/blog-4.jpg";
-import img5 from "../../assets/blog-5.jpg";
-import img6 from "../../assets/blog-6.jpg";
-import img7 from "../../assets/blog-7.jpg";
+import img1 from "../../assets/blog-1.jpeg";
+import img2 from "../../assets/blog-2.jpeg";
+import img3 from "../../assets/blog-3.jpeg";
+import img4 from "../../assets/blog-4.jpeg";
+import img5 from "../../assets/blog-5.jpeg";
+import img6 from "../../assets/blog-6.jpeg";
+import img7 from "../../assets/blog-7.jpeg";
 
 const Blog = () => {
   var settings = {

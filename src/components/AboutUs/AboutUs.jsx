@@ -1,6 +1,6 @@
 import React from "react";
 import { Background, Parallax } from "react-parallax";
-import img1 from "../../assets/blog-7.jpg";
+import img1 from "../../assets/blog-7.jpeg";
 
 const AboutUs = () => {
   return (

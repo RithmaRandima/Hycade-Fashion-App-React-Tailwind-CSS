@@ -6,13 +6,13 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Background, Parallax } from "react-parallax";
 
-import img1 from "../assets/blog-1.jpg";
-import img2 from "../assets/blog-4.jpg";
-import img3 from "../assets/blog-5.jpg";
+import img1 from "../assets/blog-1.jpeg";
+import img2 from "../assets/blog-4.jpeg";
+import img3 from "../assets/blog-5.jpeg";
 
-import img4 from "../assets/blog-2.jpg";
-import img5 from "../assets/blog-6.jpg";
-import img6 from "../assets/hero-bg-3.webp";
+import img4 from "../assets/blog-2.jpeg";
+import img5 from "../assets/blog-6.jpeg";
+import img6 from "../assets/hero-bg-3.jpeg";
 import img7 from "../assets/staff-4.jpg";
 
 const imgContainerImg1 = [img1, img2, img3];

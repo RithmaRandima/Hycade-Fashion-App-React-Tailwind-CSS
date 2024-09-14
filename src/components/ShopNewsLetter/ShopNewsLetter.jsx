@@ -1,5 +1,5 @@
 import React from "react";
-import bgImg from "../../assets/shop-Newsletter-Background.jpg";
+import bgImg from "../../assets/shop-Newsletter-Background.jpeg";
 import img1 from "../../assets/shop-newsletter-img-1.png";
 import img2 from "../../assets/shop-newsletter-img-2.png";
 import img3 from "../../assets/shop-newsletter-img-3.png";

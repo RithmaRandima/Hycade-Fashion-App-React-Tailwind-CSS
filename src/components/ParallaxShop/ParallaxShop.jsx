@@ -1,8 +1,8 @@
 import React from "react";
 import { Background, Parallax } from "react-parallax";
 // import bgImg from "../../assets/pexels-scottwebb-2117938.jpg";
-import parallaxLeft from "../../assets/paralex-shop-left.jpg";
-import parallaxRight from "../../assets/paralex-shop-right.jpg";
+import parallaxLeft from "../../assets/paralex-shop-left.jpeg";
+import parallaxRight from "../../assets/paralex-shop-right.jpeg";
 import img1 from "../../assets/parallax-img-1.png";
 import img2 from "../../assets/parallax-img-2.png";
 import img3 from "../../assets/parallax-img-3.png";

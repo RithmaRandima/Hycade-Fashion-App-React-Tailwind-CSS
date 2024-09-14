@@ -1,6 +1,6 @@
 import React from "react";
 import "./LookBookBox.css";
-import img1 from "../../../assets/blog-2.jpg";
+import img1 from "../../../assets/blog-2.jpeg";
 import { FaEye, FaHeart } from "react-icons/fa";
 
 const LookBookBox = (props) => {
