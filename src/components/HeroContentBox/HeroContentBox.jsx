@@ -5,11 +5,11 @@ import { motion } from "framer-motion";
 
 const HeroContentBox = (props) => {
   return (
-    <div className="w-[100%] h-[90vh] md:h-[95vh] relative">
+    <div className="w-[100%] h-[80vh] md:h-[95vh] relative">
       {/* overlay */}
       <div className="absolute z-10 left-0 top-0 w-[100%] h-[100%] bg-gradient-to-t from-black/70 to-black/20"></div>
-      <Parallax strength={200} className="w-[100%] h-[90vh] md:h-[100%]">
-        <Background className="custom-bg w-[100vw] h-[90vh] md:h-[100%] overflow-hidden">
+      <Parallax strength={200} className="w-[100%] h-[80vh] md:h-[100%]">
+        <Background className="custom-bg w-[100vw] h-[80vh] md:h-[100%] overflow-hidden">
           <img
             src={props.img}
             alt="fill murray"
@@ -17,7 +17,7 @@ const HeroContentBox = (props) => {
           />
         </Background>
         {/* information */}
-        <div className="absolute z-20  w-[100%] h-[90vh] flex flex-col justify-center items-center md:items-start text-white md:pl-[100px] pt-[50px]">
+        <div className="absolute z-20  w-[100%] h-[80vh] md:h-[95vh] flex flex-col justify-center items-center md:items-start text-white md:pl-[100px] pt-[50px]">
           <motion.h1
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -40,7 +40,7 @@ const HeroContentBox = (props) => {
               damping: 10,
               delay: 0.3,
             }}
-            className="tracking-[10px] md:tracking-[30px] text-[50px] md:text-[72px] font-[900] md:font-[500] text-center md:text-left md:w-[100%] w-[75%]"
+            className="tracking-[10px] md:tracking-[30px] text-[40px] md:text-[72px] font-[900] md:font-[500] text-center md:text-left md:w-[100%] w-[75%]"
           >
             {props.title}
           </motion.h1>

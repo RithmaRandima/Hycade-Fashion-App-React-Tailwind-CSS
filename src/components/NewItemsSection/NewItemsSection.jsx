@@ -23,28 +23,28 @@ const NewItemsSection = () => {
     waitForAnimate: false,
   };
   return (
-    <div className="w-[100%] h-[100vh] mt-[100px] md:mt-[0] flex items-center justify-center bg-white my-[50px]">
+    <div className="w-[100%] h-[80vh] md:h-[100vh] mt-[100px] md:mt-[0] flex items-center justify-center bg-white md:my-[50px]">
       <div
-        className="w-[90%] mx-auto h-[70vh] px-4 py-3"
+        className="w-[90%] mx-auto h-[50vh] md:h-[70vh] px-4 py-3"
         style={{ backgroundImage: `url(${bgImg})`, backgroundSize: "cover" }}
       >
         <div className="w-[100%] h-[100%] bg-white grid md:grid-cols-2">
           {/* left section */}
           <div className="w-[100%] h-[100%] pl-[30px] flex items-center justify-center relative">
-            <div className="absolute h-[55vh] md:h-[90vh] w-[65%]  md:w-[90%] shadow-sm shadow-black/60 overflow-hidden">
+            <div className="absolute h-[25vh] md:h-[90vh] w-[90%]  md:w-[90%] shadow-sm shadow-black/60 overflow-hidden mt-[-220px] md:mt-[0]">
               <Slider {...settings}>
                 {imgList.map((img) => (
                   <img
                     src={img}
                     alt=""
-                    className="h-[90vh] w-[100%] object-cover hover:scale-105 duration-300"
+                    className="h-[25vh] md:h-[90vh] w-[100%] object-cover hover:scale-105 duration-300"
                   />
                 ))}
               </Slider>
             </div>
           </div>
           {/* right section */}
-          <div className="px-[40px] box-border flex items-center mt-[180px] md:mt-[0]">
+          <div className="px-[40px] box-border flex items-center mt-[0px] md:mt-[0]">
             <div className="">
               <p className="bg-black w-fit text-white px-2">
                 <span className="line-through mr-1">130$</span> <span>79$</span>

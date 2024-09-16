@@ -20,7 +20,7 @@ const ShopNewsLetter = () => {
       {/* content */}
       <div className="w-[100%] h-[100%] bg-black/60 absolute top-0 grid md:grid-cols-2">
         {/* left section */}
-        <div className="w-[100%] h-[100%]  flex items-center justify-center relative">
+        <div className="mt-[-60px] md:mt-0 w-[100%] h-[100%]  flex items-center justify-center relative">
           <div className=" text-white flex flex-col items-center md:items-end ">
             <p className="text-[38px] font-[700] ">
               black sneakers, so classy!

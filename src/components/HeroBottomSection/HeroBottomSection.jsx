@@ -6,7 +6,7 @@ import img2 from "../../assets/hero-bottom-2.jpeg";
 import img3 from "../../assets/hero-bottom-3.jpeg";
 const HeroBottomSection = () => {
   return (
-    <div className="flex flex-col  mb-[40px] pb-[10px]  md:mt-[0] mt-[-120px]">
+    <div className="flex flex-col  mb-[40px] pb-[10px]  md:mt-[0] mt-[-240px]">
       {/* top section */}
       <div className="w-[95%] md:w-[85%] mx-auto h-[330px] place-items-center md:h-[240px] py-[20px] md:px-[40px] box-border grid grid-cols-3 gap-2  md:gap-5">
         <HeroBottomBox name={"Milano"} img={img1} />

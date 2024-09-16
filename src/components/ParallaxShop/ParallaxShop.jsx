@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 const ParallaxShop = () => {
   return (
-    <div className="w-[100%] h-[100vh] flex flex-row">
+    <div className="w-[100%] h-[70vh] md:h-[100vh] flex flex-row">
       {/* left side */}
       <div className="hidden md:block w-[40vw] h-[100%]">
         <img
@@ -32,11 +32,12 @@ const ParallaxShop = () => {
 
           {/* Right Side Small Image 01 */}
           <motion.div
-            whileInView={{ y: [0, -130] }}
+            initial={{ opacity: 0 }}
+            whileInView={{ y: [0, -130], opacity: 1 }}
             transition={{
-              duration: 3,
+              duration: 1.5,
             }}
-            className="w-[240px] h-[240px]  md:w-[300px] md:h-[300px]  b-black absolute left-[50px]
+            className="w-[230px] h-[230px] md:w-[300px] md:h-[300px]  b-black absolute md:left-[50px] left-[150px]
             top-[150px]"
           >
             <img
@@ -58,13 +59,14 @@ const ParallaxShop = () => {
 
           {/* Right Side Small Image 02 */}
           <motion.div
-            whileInView={{ x: [0, 40] }}
+            initial={{ opacity: 0 }}
+            whileInView={{ x: [0, 40], opacity: 1 }}
             transition={{
-              duration: 3,
+              duration: 1.3,
               delay: 0.2,
             }}
-            className="w-[200px] h-[200px] md:w-[260px] md:h-[260px]  absolute left-[-30px]
-            top-[340px]"
+            className="w-[190px] h-[190px] md:w-[260px] md:h-[260px]  absolute md:left-[-30px]
+            md:top-[340px] top-[160px] left-[-10px]"
           >
             <img
               src={img3}
@@ -85,13 +87,14 @@ const ParallaxShop = () => {
 
           {/* Right Side big Image  */}
           <motion.div
-            whileInView={{ y: [-270, -130] }}
+            initial={{ opacity: 0 }}
+            whileInView={{ y: [-270, -130], opacity: 1 }}
             transition={{
-              duration: 3,
+              duration: 1.5,
               delay: 0.1,
             }}
-            className="w-[420px] h-[420px] md:w-[470px] md:h-[470px] absolute left-[220px] md:left-[280px]
-            top-[260px]"
+            className="w-[400px] h-[400px] md:w-[470px] md:h-[470px] absolute left-[80px] md:left-[280px]
+            md:top-[260px] top-[380px]"
           >
             <img
               src={img2}

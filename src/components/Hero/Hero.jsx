@@ -35,7 +35,7 @@ const Hero = () => {
           );
         })}
       </Slider>
-      <div className="absolute bottom-[90px] md:bottom-[30px] left-[0px] font-[900] w-[60px] h-[35px] bg-white text-black flex items-center justify-center text-[20px] hover:bg-black hover:text-white cursor-pointer">
+      <div className="absolute bottom-[210px] md:bottom-[30px] left-[0px] font-[900] w-[60px] h-[35px] bg-white text-black flex items-center justify-center text-[20px] hover:bg-black hover:text-white cursor-pointer">
         <FaCartPlus />
       </div>
     </div>

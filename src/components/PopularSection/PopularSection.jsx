@@ -4,7 +4,43 @@ import Item from "../Item/Item";
 import { Background, Parallax } from "react-parallax";
 import { itemsData } from "../../data/ItemData";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+
 const PopularSection = () => {
+  var settings = {
+    arrows: false,
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    speed: 1600,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 1,
+
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          infinite: true,
+        },
+      },
+    ],
+  };
   return (
     <div className="w-[100%] h-[100%] flex flex-col bg-cover">
       <Parallax strength={500} className="w-[100%] h-[100%] text-center pb-12">
@@ -33,7 +69,8 @@ const PopularSection = () => {
         </div>
 
         {/* items section */}
-        <div className="w-[92%] mx-auto h-[100%] grid grid-cols-2 md:grid-cols-4  grid-rows-2 gap-[30px] pb-[40px]">
+        {/* desktop */}
+        <div className="hidden w-[92%] mx-auto h-[100%] md:grid grid-cols-2 md:grid-cols-4  grid-rows-2 gap-[30px] pb-[40px]">
           {itemsData.map((item) => {
             if (item.popular === true) {
               return (
@@ -48,6 +85,26 @@ const PopularSection = () => {
               return null;
             }
           })}
+        </div>
+
+        {/* mobile */}
+        <div className="md:hidden block w-[100%] mx-auto h-[100%] pb-[40px]">
+          <Slider {...settings}>
+            {itemsData.map((item) => {
+              if (item.popular === true) {
+                return (
+                  <Item
+                    img={item.img}
+                    key={item.id}
+                    price={item.price}
+                    newItems={item.newItems}
+                  />
+                );
+              } else {
+                return null;
+              }
+            })}
+          </Slider>
         </div>
 
         {/* button */}

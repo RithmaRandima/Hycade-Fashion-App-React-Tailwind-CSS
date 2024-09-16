@@ -21,7 +21,7 @@ const Footer = () => {
           <img
             src={img1}
             alt="fill murray"
-            className="w-[100%] h-[100%] object-cover object-center"
+            className="w-[100%] h-[70vh] md:h-[100%] object-cover object-center"
           />
         </Background>
         <div className="w-[100%] h-[40vh] flex flex-col bg-gradient-to-r from-black to-black/10 items-center justify-center">

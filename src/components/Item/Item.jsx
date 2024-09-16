@@ -8,10 +8,10 @@ const Item = (props) => {
   return (
     <div className="items-container w-[96%] h-[350px] relative text-center ml-1 mb-[40px] cursor-pointer">
       {/* img container */}
-      <div className="w-[100%] h-[320px] overflow-hidden">
+      <div className="w-[100%]  h-[300px] md:h-[320px] overflow-hidden">
         <img
           src={props.img}
-          className="w-[100%] h-[320px] object-cover duration-500"
+          className="w-[100%] h-[300px] md:h-[320px] object-cover duration-500"
           alt=""
         />
       </div>
